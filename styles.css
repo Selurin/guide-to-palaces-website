@@ -7,7 +7,6 @@
 body {
   margin: 0px;
   background: #F8FAFC;
-
   min-height: 100vh;
 }
 
@@ -414,9 +413,8 @@ body {
 .test-section {
     background: linear-gradient(90deg, #DA8214 0%, #88AF33 100%);
     padding: 80px 60px;
-    margin: 0 auto 120px;
-    max-width: 1400px;
-    border-radius: 0;
+    margin: 0 0 120px 0;
+    width: 100%;
 }
 
 .test-content {
@@ -549,10 +547,12 @@ body {
     font-size: 18px;
     margin: 0;
     text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #6A6A6A;
 }
 
 .footer-right {
-    text-align: right;
+    text-align: center;
 }
 
 .footer-title {
@@ -566,7 +566,7 @@ body {
 .footer-palaces {
     display: flex;
     gap: 30px;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .footer-link {
