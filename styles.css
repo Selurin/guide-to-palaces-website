@@ -410,8 +410,110 @@ body {
     font-weight: 600;
     line-height: 1.4;
 }
+/* Секция с тестом */
+.test-section {
+    background: linear-gradient(90deg, #DA8214 0%, #88AF33 100%);
+    padding: 80px 60px;
+    margin: 0 auto 120px;
+    max-width: 1400px;
+    border-radius: 0;
+}
+
+.test-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.test-title {
+    font-size: 36px;
+    color: #FFFFFF;
+    text-shadow: 3px 3px 7px black;
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.test-cta {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.test-text {
+    font-size: 32px;
+    color: #FFFFFF;
+    text-shadow: 3px 3px 7px black;
+    font-weight: 400;
+}
+
+.test-arrow {
+    font-size: 48px;
+    color: #FFFFFF;
+    text-shadow: 3px 3px 7px black;
+    line-height: 1;
+}
+
+.test-btn {
+    display: inline-block;
+    background: #FFFFFF;
+    color: #222222;
+    font-size: 24px;
+    padding: 16px 60px;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.test-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.test-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+
 
 /* Адаптивность для разных экранов */
+@media (max-width: 768px) {
+    .test-section {
+        padding: 50px 30px;
+        margin: 0 auto 80px;
+    }
+    
+    .test-title {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+    
+    .test-cta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    
+    .test-text {
+        font-size: 26px;
+    }
+    
+    .test-arrow {
+        font-size: 40px;
+        transform: rotate(90deg);
+    }
+    
+    .test-btn {
+        font-size: 20px;
+        padding: 14px 40px;
+    }
+}
+
+
 @media (max-width: 1600px) {
     .palaces-grid {
         grid-template-columns: repeat(3, 1fr);
