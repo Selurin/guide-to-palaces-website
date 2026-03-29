@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/favicon.ico">
+    <title>Царская тропа | Путеводитель по дворцам</title>
+</head>
+
+<body>
+    <!-- Навигация -->
+    <nav>
+        <div class="top-bar">
+            <div class="top-bar">
+                <nav class="nav-container">
+                    <a href="index.html" class="nav-item active">Главная</a>
+                    <a href="#" class="nav-item">Дворцы</a>
+                    <a href="#" class="nav-item">Памятка путешественнику</a>
+                    <a href="#" class="nav-item">Тест</a>
+                    <a href="#" class="nav-item">Контакты</a>
+                </nav>
+
+                <div class="datetime">
+                    <div class="datetime-text time" id="time">11:00</div>
+                    <div class="datetime-text date" id="date">25.03.2026</div>
+                </div>
+            </div>
+
+            <script src="scripts/timedate.js"></script>
+    </nav>
+
+    <!-- Герой секция -->
+    <section class="hero-section">
+        <picture>
+            <source srcset="img/index-photo/main-photo.avif" type="image/avif">
+            <source srcset="img/index-photo/main-photo.webp" type="image/webp">
+            <img src="img/index-photo/main-photo.jpg" alt="Hero background" class="hero-image" loading="eager">
+        </picture>
+        <div class="hero-content">
+            <h1 class="hero-title">Царская тропа</h1>
+            <p class="hero-subtitle">Путеводитель <br>по дворцам</p>
+        </div>
+    </section>
+
+
+    <main>
+        <!-- Текстовый блок с описанием -->
+        <section class="about-section">
+            <div class="about-section-text-decoration-line"></div>
+
+            <div class="about-section-text-container">
+                <p class="about-section-main-text">
+                    <span class="about-section-highlight">Санкт-Петербург</span> — невероятно многообразный город, и для
+                    каждого он свой. Он
+                    завораживает путешественников своей красотой, историей и уникальной атмосферой. В этом городе
+                    собрано
+                    невероятное количество памятников, но каждый из нас при поездке в Питер задаётся одним и тем же
+                    вопросом: что
+                    посмотреть?
+                </p>
+
+                <p class="about-section-main-text">
+                    На нашем сайте представлена программа <span class="about-section-highlight">экскурсионного
+                        маршрута</span>, рассчитанного на
+                    <span class="about-section-highlight">4–6 дней</span>. Следуя ей, вы сможете посетить все самые
+                    красивые дворцы
+                    Санкт-Петербурга, каждый из которых впечатлит даже самых заядлых путешественников.
+                </p>
+
+                <p class="about-section-main-text">
+                    Наш маршрут охватывает самые разнообразные дворцы. Здесь вы сможете увидеть и популярный в XVIII
+                    веке
+                    классицизм, и елизаветинское барокко, сочетающее в себе элементы ренессанса, и пришедший на смену
+                    классицизму
+                    изысканный ампир.
+                </p>
+
+                <p class="about-section-main-text">
+                    Наши дворцы расположены в порядке, в котором мы рекомендуем вам их посетить. <span
+                        class="about-section-highlight">Следование
+                        этому маршруту подарит Вам множество эмоций</span> о северной столице нашей родины.
+                </p>
+            </div>
+
+            <div class="about-section-text-decoration-line"></div>
+        </section>
+
+        <!-- Секция преимуществ -->
+        <section class="advantages-section">
+            <h2 class="section-title">Преимущества нашего сайта</h2>
+
+            <div class="advantages-container">
+                <div class="advantage-card orange">
+                    <h3 class="h-title">Актуальность</h3>
+                    <p class="advantage-text">
+                        На нашем сайте представлена самая свежая и актуальная информация о дворцах Санкт-Петербурга.
+                    </p>
+                </div>
+
+                <div class="advantage-card olive">
+                    <h3 class="h-title">Профессионализм</h3>
+                    <p class="advantage-text">
+                        Наш сайт разрабатывался любителями истории, для которых очень важна достоверность информации.
+                    </p>
+                </div>
+
+                <div class="advantage-card green">
+                    <h3 class="h-title">Проверка знаний</h3>
+                    <p class="advantage-text">
+                        Только на нашем сайте вы можете не только прочитать интересную информацию о дворцах
+                        Санкт-Петербурга, но и закрепить свои знания о них.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Маршрут -->
+        <section class="itinerary">
+            <h2 class="h-title">МАРШРУТ</h2>
+            <picture>
+                <source srcset="img/index-photo/itinerary.avif" type="image/avif">
+                <source srcset="img/index-photo/itinerary.webp" type="image/webp">
+                <img src="img/index-photo/itinerary.png" alt="Маршрут" class="itinerary-image" loading="lazy">
+            </picture>
+        </section>
+
+        <!-- Призыв к действию -->
+        <div class="cta-section">
+            <div class="cta-background"></div>
+            <div class="cta-content">
+                <p class="cta-text">Позвольте себе погрузиться в атмосферу империи.</p>
+                <p class="cta-text">Выберите дворец и сделайте первый шаг в мир роскоши и величия.</p>
+                </div>
+            </div>
+            
+            <!-- Кнопка случайного дворца -->
+            <div class="random-palace-section">
+                <a href="#" class="random-palace-btn">
+                    Случайный дворец
+                </a>
+            </div>
+        </main>
+
+
+</body>
+
+</html>
