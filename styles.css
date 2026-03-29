@@ -763,7 +763,17 @@ body {
     }
 
     .card-image-wrapper {
-        height: 240px;
+        height: auto;
+        max-height: 420px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-image {
+        max-width: 420px;
+        height: auto;
+        width: 100%;
     }
 
     .card-title {
