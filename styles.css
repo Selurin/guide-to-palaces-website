@@ -299,3 +299,146 @@ body {
     transform: translateY(-2px);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
 }
+
+/* Секция с карточками дворцов */
+.palaces-section {
+    max-width: 1600px;
+    margin: 0 auto 120px;
+    padding: 0 40px;
+}
+
+.palaces-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 120px;
+    justify-content: center;
+    max-width: 1440px; 
+    margin: 0 auto;
+}
+
+.palace-card {
+    display: block;
+    background: #FFFFFF;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    border-top: 28px solid #CD0000;
+}
+
+.palace-card.palace1 {
+    border-top-color: #46b488;
+}
+
+.palace-card.palace2 {
+    border-top-color: #D48858;
+}
+
+.palace-card.palace3 {
+    border-top-color: #f5d8a0;
+}
+
+.palace-card.palace4 {
+    border-top-color: #D4C4A8;
+}
+
+.palace-card.palace5 {
+    border-top-color: #D89890;
+}
+
+.palace-card.palace6 {
+    border-top-color: #8898A8;
+}
+
+.palace-card.palace7 {
+    border-top-color: #50aab3;
+}
+
+.palace-card.palace8 {
+    border-top-color: #87746a;
+}
+
+.palace-card.palace9 {
+    border-top-color: #D48840;
+}
+
+.palace-card.palace10 {
+    border-top-color: #cacbc5;
+}
+
+.palace-card.palace11 {
+    border-top-color: #e3ac3c;
+}
+
+.palace-card.palace12 {
+    border-top-color: #f5e8a6;
+}
+
+.palace-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.16);
+}
+
+.card-image-wrapper {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.palace-card:hover .card-image {
+    transform: scale(1.05);
+}
+
+.card-content {
+    padding: 24px 20px 30px;
+    text-align: center;
+}
+
+.card-title {
+    font-family: "Vollkorn", serif;
+    font-size: 24px;
+    color: #222222;
+    margin: 0;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+/* Адаптивность для разных экранов */
+@media (max-width: 1600px) {
+    .palaces-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 1200px) {
+    .palaces-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .palaces-grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+    
+    .palaces-section {
+        padding: 0 20px;
+    }
+    
+    .card-image-wrapper {
+        height: 240px;
+    }
+    
+    .card-title {
+        font-size: 20px;
+    }
+}
