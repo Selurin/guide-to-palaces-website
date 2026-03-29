@@ -414,7 +414,7 @@ body {
     background: linear-gradient(90deg, #DA8214 0%, #88AF33 100%);
     padding: 80px 60px;
     margin: 0 0 120px 0;
-    width: 100%;
+    box-sizing: border-box;
 }
 
 .test-content {
@@ -517,7 +517,7 @@ body {
 
 .footer-content {
     background: #4A4A4A;
-    padding: 40px 60px;
+    padding: 40px 60px 0;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -535,20 +535,18 @@ body {
     gap: 12px;
 }
 
-.footer-center {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .footer-copyright {
     color: #FFFFFF;
     font-size: 18px;
     margin: 0;
     text-align: center;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #6A6A6A;
+    padding-top: 20px;
+    border-top: 1px solid #6A6A6A;
+}
+
+.footer-bottom {
+    background: #4A4A4A;
+    padding-bottom: 17px;
 }
 
 .footer-right {
@@ -584,7 +582,7 @@ body {
 @media (max-width: 768px) {
     .footer-content {
         flex-direction: column;
-        padding: 30px 20px;
+        padding: 30px 20px 0;
         gap: 30px;
     }
     
@@ -597,11 +595,7 @@ body {
     .footer-column {
         gap: 10px;
     }
-    
-    .footer-center {
-        width: 100%;
-    }
-    
+
     .footer-right {
         text-align: left;
         width: 100%;
@@ -612,7 +606,11 @@ body {
         gap: 10px;
         justify-content: flex-start;
     }
-    
+
+    .footer-bottom {
+        padding-bottom: 17px;
+    }
+
     .footer-gradient {
         height: 40px;
     }
