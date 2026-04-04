@@ -312,10 +312,9 @@ body {
     z-index: 1;
     width: 70px;
     height: 70px;
-    background: red; 
+    background: white; 
     left: -20px;  
     top: -20px;
-    font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
     font-size: 28px;
