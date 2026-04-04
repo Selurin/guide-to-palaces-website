@@ -310,16 +310,16 @@ body {
 .circle {
     position: absolute;
     z-index: 1;
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
     background: red; 
-    left: -30px;  
-    top: -30px;
+    left: -20px;  
+    top: -20px;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
     font-size: 28px;
-    line-height: 32px;
+    line-height: 67px;
     border-radius: 50px;
     text-align: center;
     
