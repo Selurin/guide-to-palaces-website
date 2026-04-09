@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="palace.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="icon" href="img/favicon.ico">
     <title>Зимний дворец | Царская тропа</title>
 </head>
@@ -13,26 +15,214 @@
     <!-- Навигация -->
     <nav>
         <div class="top-bar">
-            <div class="top-bar">
-                <nav class="nav-container">
-                    <a href="index.html" class="nav-item">Главная</a>
-                    <a href="index.html#palaces" class="nav-item active">Дворцы</a>
-                    <a href="#" class="nav-item">Памятка путешественнику</a>
-                    <a href="#" class="nav-item">Тест</a>
-                    <a href="#" class="nav-item">Контакты</a>
-                </nav>
+            <nav class="nav-container">
+                <a href="index.html" class="nav-item">Главная</a>
+                <a href="index.html#palaces" class="nav-item active">Дворцы</a>
+                <a href="#" class="nav-item">Памятка путешественнику</a>
+                <a href="testing.html" class="nav-item">Тест</a>
+                <a href="#" class="nav-item">Контакты</a>
+            </nav>
 
-                <div class="datetime">
-                    <div class="datetime-text time" id="time">11:00</div>
-                    <div class="datetime-text date" id="date">25.03.2026</div>
-                </div>
+            <div class="datetime">
+                <div class="datetime-text time" id="time">11:00</div>
+                <div class="datetime-text date" id="date">25.03.2026</div>
             </div>
+        </div>
 
-            <script src="scripts/timedate.js"></script>
+        <script src="scripts/timedate.js"></script>
+        </div>
     </nav>
 
     <main>
+        <h1 class="h-palace">Зимний дворец</h1>
+        <!-- Слайдер -->
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="img/zimniy/main-1.webp" type="image/webp">
+                        <img src="img/zimniy/main-1.jpg" alt="Зимний дворец - главное фото" loading="eager">
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="img/zimniy/main-2.webp" type="image/webp">
+                        <img src="img/zimniy/main-2.jpg" alt="Зимний дворец - фото сбоку" loading="eager">
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="img/index-photo/cards/zimniy.webp" type="image/webp">
+                        <img src="img/index-photo/cards/zimniy.jpg" alt="Зимний дворец - дополнительное фото"
+                            loading="lazy">
+                    </picture>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+
+        <!-- Слайдер JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+        <script src="scripts/slider.js"></script>
+
+        <!-- Основная информация -->
+        <section class="info-section">
+            <div class="decor-line"></div>
+
+            <h2 class="info-main-title">Основная информация</h2>
+
+            <div class="info-cards-container">
+
+                <!-- Карточка 1 -->
+                <div class="info-card" style="background-color:#BAEDE5;">
+                    <h3 class="info-card-title">Адрес</h3>
+                    <p class="info-card-text">Дворцовая площадь 2,<br>Санкт-Петербург</p>
+                </div>
+
+                <!-- Карточка 2 -->
+                <div class="info-card" style="background-color:#94DED2;">
+                    <h3 class="info-card-title">Годы постройки</h3>
+                    <p class="info-card-text">1754–1762</p>
+                </div>
+
+                <!-- Карточка 3 -->
+                <div class="info-card" style="background-color:#6BBDB0;">
+                    <h3 class="info-card-title">Стиль</h3>
+                    <p class="info-card-text">Елизаветинское барокко с элементами французского рококо</p>
+                </div>
+            </div>
+
+            <!-- Карта -->
+            <div class="map-container">
+                <script type="text/javascript" charset="utf-8" async
+                    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adefdbcf7adf069b72fcefb8a0503294a89bd5dc6b9655a9edaea51349e60d1e5&amp;width=700&amp;height=700&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+        </section>
+
+        <!-- История строительства -->
+        <section class="history-section">
+            <div class="history-container">
+                <div class="history-header">
+                    <h2 class="history-title">История строительства</h2>
+                </div>
+
+                <div class="history-content">
+                    <div class="history-image-wrapper">
+                        <img src="img/zimniy/history.jpg" alt="Зимний дворец" class="history-image" loading="lazy">
+                    </div>
+
+                    <div class="history-text">
+                        <p>Императрица Елизавета Петровна приказала построить пятый по счёту Зимний дворец, и работы
+                            были начаты
+                            в 1754 году. Однако императрица не дожила до окончания строительства и окончания работ в
+                            апреле
+                            принимал Пётр III. Екатерина II, взошедшая на престол в 1762 году после государственного
+                            переворота,
+                            отстранила от внутренних работ Ф. Б. Растрелли и назначила Ю. М. Фельтен, Ж. Б.
+                            Валлен-Деламот и А.
+                            Ринальди под руководством И. И. Бецкого.</p>
+
+                        <p>В 1764 году Екатерине II были переданы из Берлина 317 ценных картин общей стоимостью в 183
+                            тысячи
+                            талеров из частной коллекции живописи Иоханна Эрнста Гоцковского. Эти картины положили
+                            начало
+                            коллекции Эрмитажа. В 1767–1765 годах для них было построено специальное здание. В 1837 году
+                            в
+                            Зимнем дворце произошёл пожар, уничтоживший все интерьеры и повредивший южно-восточное
+                            крыло.
+                            Руководить восстановительными работами было поручено В. П. Стасову, А. П. Брюллову и А. Е.
+                            Штауберту, И. М. Маевскому и через год они были окончены.</p>
+                    </div>
+                </div>
+
+                <div class="interesting-fact-box">
+                    <h3 class="fact-title">Интересный факт!</h3>
+                    <p class="fact-text">В зимнем дворце насчитывается более 1000 комнат, а его площадь составляет 60
+                        тыс. м²
+                    </p>
+                </div>
+
+                <div class="history-footer-text">
+                    <p>После Февральской революции во дворце расположилось Временное правительство. После ареста
+                        министров
+                        дворец был объявлен музеем, а оставшиеся ценности национализированы.</p>
+
+                    <p>Во время Великой Отечественной Войны в подвалах Зимнего дворца были обустроены бомбоубежища, было
+                        зафиксировано несколько прямых попаданий, но благодаря усилиям энтузиастов дворец продолжил свою
+                        работу
+                        уже осенью 1945 года.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Архитектурные особенности -->
+        <section class="architecture-section">
+            <div class="architecture-container">
+                <h2 class="architecture-title">Архитектурные особенности</h2>
+
+                <div class="architecture-images">
+                    <div class="architecture-image-item">
+                        <img src="img/zimniy/architectory-1.jpg" alt="Иорданская лестница" class="architecture-photo"
+                            loading="lazy">
+                        <p class="architecture-caption">Иорданская лестница</p>
+                    </div>
+
+                    <div class="architecture-image-item">
+                        <img src="img/zimniy/architectory-2.jpg" alt="Золотая гостиная Марии Александровны"
+                            class="architecture-photo" loading="lazy">
+                        <p class="architecture-caption">Золотая гостиная Марии Александровны</p>
+                    </div>
+                </div>
+
+                <div class="architecture-text">
+                    <p>Зимний дворец построили в форме замкнутого прямоугольника с просторным внутренним двором.
+                        Визуально всё
+                        здание поделено на два яруса: нижний — более приземистый и верхний — воздушный и парадный.
+                        Парадный вход
+                        южного фасада украшен тремя арками, а также фронтоном с часами и флагштоком. При создании дворца
+                        особое
+                        внимание было уделено отделке фасадов. Белоснежные колонны на всём протяжении дворца в одних
+                        местах
+                        расставлены тесно, а в других — широко. Карниз дворца украшен древнеримскими статуями и вазами,
+                        а окна —
+                        богато декорированными наличниками. Каждое лепное украшение в наружной отделке здания
+                        создавалось
+                        мастерами вручную.</p>
+                </div>
+            </div>
+        </section>
+
     </main>
+
+    <!-- Подвал -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-column">
+                    <a href="#" class="footer-link">Новости</a>
+                    <a href="#" class="footer-link">Памятка путешественника</a>
+                </div>
+                <div class="footer-column">
+                    <a href="#" class="footer-link">Тест</a>
+                    <a href="#" class="footer-link">Контакты</a>
+                </div>
+            </div>
+
+            <div class="footer-right">
+                <h3 class="footer-title">Популярные дворцы</h3>
+                <div class="footer-palaces">
+                    <a href="zimniy.html" class="footer-link">Зимний</a>
+                    <a href="petergof.html" class="footer-link">Петергоф</a>
+                    <a href="petra-2.html" class="footer-link">Петра II</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copyright">© 2026 • Selurin</p>
+        </div>
+    </footer>
 
 </body>
 
