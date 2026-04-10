@@ -652,6 +652,39 @@ body {
   margin: 0 0 25px;
 }
 
+/* Кнопка "Начать" */
+.testing-card-button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #4A4A4A 0%, #303030 100%);
+  color: #fff;
+  text-align: center;
+  font-family: 'Tuffy', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 12px;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  margin-top: auto;
+  transition: all 0.3s ease;
+}
+
+.testing-card:hover .testing-card-button {
+  background: linear-gradient(135deg, #A8D94A 0%, #8CC73F 100%);
+  box-shadow: 0 4px 12px rgba(168, 217, 74, 0.4);
+}
+
+/* Иконка стрелки */
+.testing-card-arrow {
+  display: inline-block;
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+.testing-card:hover .testing-card-arrow {
+  transform: translateX(5px);
+}
+
 /* Тест 1 — оранжевый */
 .testing-card--orange::before {
   background: #FFB347;
@@ -707,39 +740,6 @@ body {
 .testing-card--green:hover .testing-card-button {
   background: #A8D94A;
   box-shadow: 0 4px 12px rgba(168, 217, 74, 0.4);
-}
-
-/* Кнопка "Начать" */
-.testing-card-button {
-  width: 100%;
-  padding: 14px;
-  background: linear-gradient(135deg, #4A4A4A 0%, #303030 100%);
-  color: #fff;
-  text-align: center;
-  font-family: 'Tuffy', sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  border-radius: 12px;
-  text-decoration: none;
-  letter-spacing: 0.5px;
-  margin-top: auto;
-  transition: all 0.3s ease;
-}
-
-.testing-card:hover .testing-card-button {
-  background: linear-gradient(135deg, #A8D94A 0%, #8CC73F 100%);
-  box-shadow: 0 4px 12px rgba(168, 217, 74, 0.4);
-}
-
-/* Иконка стрелки */
-.testing-card-arrow {
-  display: inline-block;
-  margin-left: 8px;
-  transition: transform 0.3s ease;
-}
-
-.testing-card:hover .testing-card-arrow {
-  transform: translateX(5px);
 }
 
 
