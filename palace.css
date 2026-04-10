@@ -40,7 +40,6 @@
 .decor-line {
   width: 100%;
   height: 12px;
-  background-color: #8FD9C6;
   border-radius: 6px;
   margin: 40px auto 10px;
 }
@@ -66,7 +65,7 @@
 
 .info-card {
   font-family: 'Tuffy';
-  background-color: #9EE2CE;
+  background-color: #a5a5a5;
   border-radius: 20px;
   padding: 15px 25px;
   width: 320px;
@@ -75,7 +74,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
 }
 
@@ -108,7 +107,7 @@
   max-width: 800px;
   height: auto;
   border-radius: 20px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   object-fit: cover;
   display: block;
 }
@@ -120,7 +119,6 @@
   margin: 0 auto;
   background: #f3fffd;
   border-radius: 30px;
-  border: 4px solid #94DED2;
 }
 
 .history-header {
@@ -131,7 +129,6 @@
 .history-title {
   font-family: 'Tuffy', sans-serif;
   font-size: 42px;
-  color: #237063;
   font-weight: 700;
   margin: 0;
   position: relative;
@@ -178,7 +175,6 @@
 }
 
 .interesting-fact-box {
-  background: linear-gradient(135deg, #94ffdf 0%, #4adead 100%);
   border-radius: 20px;
   padding: 30px 40px;
   text-align: center;
