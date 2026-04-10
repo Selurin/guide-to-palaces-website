@@ -742,6 +742,42 @@ body {
   box-shadow: 0 4px 12px rgba(168, 217, 74, 0.4);
 }
 
+/* Кнопка возврата к тестам */
+.back-button-container {
+  position: absolute;
+  top: 88px;
+  left: 20px;
+  z-index: 100;
+}
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background-color: #fff;
+  color: #4A4A4A;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.back-button:hover {
+  background-color: #4A4A4A;
+  color: #fff;
+  border-color: #4A4A4A;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.back-button:active {
+  transform: translateY(0);
+}
+
 
 /* ========================================
    ПОДВАЛ

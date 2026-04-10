@@ -90,7 +90,7 @@ class QuizComponent extends HTMLElement {
                     width: 100%;
                     min-height: 100vh;
                     display: flex;
-                    align-items: center;
+                    align-items: center; 
                     justify-content: center;
                 }
 
@@ -113,7 +113,28 @@ class QuizComponent extends HTMLElement {
                 .head__content {
                     padding: 5px;
                     text-align: center;
-                    font-weight: 600;
+                    font-size: 28px;
+
+                }
+
+                .score-display {
+                    margin-top: 20px;
+                    padding: 15px 30px;
+                    text-align: center;
+                    font-size: 32px;
+                    font-weight: bold;
+                    color: #000;
+                }
+
+                @keyframes fadeIn {
+                    from {
+                        opacity: 0;
+                        transform: translateY(-10px);
+                    }
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
                 }
 
                 .quiz__body {
@@ -197,6 +218,7 @@ class QuizComponent extends HTMLElement {
                 <main class="main">
                     <div class="quiz__head">
                         <div class="head__content" id="head"></div>
+                        <div class="score-display" id="score" style="display: none;"></div>
                     </div>
                     <div class="quiz__body">
                         <div class="buttons">
@@ -215,10 +237,12 @@ class QuizComponent extends HTMLElement {
         const headElem = this.shadowRoot.getElementById("head");
         const buttonsElem = this.shadowRoot.getElementById("buttons");
         const pagesElem = this.shadowRoot.getElementById("pages");
+        const scoreElem = this.shadowRoot.getElementById("score");
 
         if (this.quiz.current < this.quiz.questions.length) {
             headElem.innerHTML = this.quiz.questions[this.quiz.current].text;
             buttonsElem.innerHTML = "";
+            scoreElem.style.display = "none";
 
             for (let i = 0; i < this.quiz.questions[this.quiz.current].answers.length; i++) {
                 const btn = document.createElement("button");
@@ -233,7 +257,22 @@ class QuizComponent extends HTMLElement {
         } else {
             buttonsElem.innerHTML = "";
             headElem.innerHTML = this.quiz.results[this.quiz.result].text;
-            pagesElem.innerHTML = "Очки: " + this.quiz.score;
+            scoreElem.style.display = "block";
+            scoreElem.innerHTML = "Очки: " + this.quiz.score + " / " + this.quiz.questions.length;
+            
+            if (this.quiz.score >= 9) {
+                scoreElem.style.color = "#22c55e";
+            } else if (this.quiz.score >= 7) {
+                scoreElem.style.color = "#a3e635";
+            } else if (this.quiz.score >= 5) {
+                scoreElem.style.color = "#eab308";
+            } else if (this.quiz.score >= 3) {
+                scoreElem.style.color = "#f97316";
+            } else {
+                scoreElem.style.color = "#ef4444";
+            }
+            
+            pagesElem.innerHTML = "";
 
             const restartBtn = document.createElement("button");
             restartBtn.className = "button button_restart";
