@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="img/favicon.ico">
-    <title>Строгановский дворец | Царская тропа</title>
+    <title>Тесты | Царская тропа</title>
 </head>
 
 <body>
@@ -16,9 +16,9 @@
             <nav class="nav-container">
                     <a href="index.html" class="nav-item">Главная</a>
                     <a href="index.html#palaces" class="nav-item">Дворцы</a>
-                    <a href="#" class="nav-item">Памятка путешественнику</a>
+                    <a href="memo-traveler.html" class="nav-item">Памятка путешественнику</a>
                     <a href="testing.html" class="nav-item active">Тест</a>
-                    <a href="#" class="nav-item">Контакты</a>
+                    <a href="contacts.html" class="nav-item">Контакты</a>
                 </nav>
 
                 <div class="datetime">
@@ -32,9 +32,50 @@
     </nav>
 
     <main>
-        <quiz-component src="quiz-data.json"></quiz-component>
+        <section class="testing-page">
+            <!-- Заголовок страницы -->
+            <div class="testing-header">
+                <h1 class="testing-title">Проверь свои знания</h1>
+                <p class="testing-subtitle">Выберите тест и узнайте, насколько хорошо вы знаете дворцы Санкт-Петербурга</p>
+                <div class="testing-decor-line"></div>
+            </div>
 
-        <script src="quiz-component.js"></script>
+            <!-- Карточки тестов -->
+            <div class="testing-cards">
+                <!-- Тест 1 -->
+                <a href="test-1.html" class="testing-card testing-card--orange">
+                    <div class="testing-card-number">1</div>
+                    <h2 class="testing-card-title">Архитектура и история дворцов</h2>
+                    <p class="testing-card-description">Архитектурные стили, строители и ключевые события в жизни дворцов Петербурга</p>
+                    <span class="testing-card-button">
+                        Начать тест
+                        <span class="testing-card-arrow">→</span>
+                    </span>
+                </a>
+
+                <!-- Тест 2 -->
+                <a href="test-2.html" class="testing-card testing-card--yellow">
+                    <div class="testing-card-number">2</div>
+                    <h2 class="testing-card-title">Дворцы: прошлое и настоящее</h2>
+                    <p class="testing-card-description">История строительства и современные учреждения в дворцах города</p>
+                    <span class="testing-card-button">
+                        Начать тест
+                        <span class="testing-card-arrow">→</span>
+                    </span>
+                </a>
+
+                <!-- Тест 3 -->
+                <a href="test-3.html" class="testing-card testing-card--green">
+                    <div class="testing-card-number">3</div>
+                    <h2 class="testing-card-title">Загородные резиденции</h2>
+                    <p class="testing-card-description">Петергоф, Гатчина, Елагинский дворец и дворец Петра II — история создания и восстановления</p>
+                    <span class="testing-card-button">
+                        Начать тест
+                        <span class="testing-card-arrow">→</span>
+                    </span>
+                </a>
+            </div>
+        </section>
     </main>
 
     <!-- Подвал -->

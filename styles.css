@@ -520,7 +520,231 @@ body {
 }
 
 /* ========================================
-   АДАПТИВНОСТЬ
+   СТРАНИЦА ТЕСТОВ
+   ======================================== */
+
+.testing-page {
+  padding: 70px 20px 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: calc(100vh - 68px - 200px);
+}
+
+/* Заголовок страницы */
+.testing-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.testing-title {
+  font-family: 'Vollkorn SC', serif;
+  font-size: 65px;
+  color: #222;
+  margin: 0 0 20px;
+  font-weight: 700;
+}
+
+.testing-subtitle {
+  font-family: 'Tuffy', sans-serif;
+  font-size: 24px;
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Декоративная линия */
+.testing-decor-line {
+  width: 100%;
+  height: 10px;
+  background-color: #4A4A4A;
+  border-radius: 6px;
+  margin: 30px auto 0;
+}
+
+/* Контейнер карточек */
+.testing-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Карточка теста */
+.testing-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 340px;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafa 100%);
+  border-radius: 20px;
+  padding: 40px 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border: 2px solid transparent;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.testing-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  transition: height 0.3s ease;
+}
+
+.testing-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.testing-card:hover::before {
+  height: 8px;
+}
+
+/* Номер теста */
+.testing-card-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 25px;
+  background: #A8D94A;
+  border-radius: 50%;
+  font-family: 'Vollkorn SC', serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(168, 217, 74, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.testing-card:hover .testing-card-number {
+  transform: scale(1.1) rotate(5deg);
+}
+
+/* Заголовок карточки */
+.testing-card-title {
+  font-family: 'Vollkorn SC', serif;
+  font-size: 26px;
+  color: #333;
+  text-align: center;
+  margin: 0 0 15px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+/* Описание карточки */
+.testing-card-description {
+  font-family: 'Tuffy', sans-serif;
+  font-size: 18px;
+  color: #666;
+  text-align: center;
+  line-height: 1.6;
+  margin: 0 0 25px;
+}
+
+/* Тест 1 — оранжевый */
+.testing-card--orange::before {
+  background: #FFB347;
+}
+
+.testing-card--orange:hover {
+  border-color: #FFB347;
+}
+
+.testing-card--orange .testing-card-number {
+  background: #FFB347;
+  box-shadow: 0 4px 10px rgba(255, 179, 71, 0.3);
+}
+
+.testing-card--orange:hover .testing-card-button {
+  background: #FFB347;
+  box-shadow: 0 4px 12px rgba(255, 179, 71, 0.4);
+}
+
+/* Тест 2 — жёлтый */
+.testing-card--yellow::before {
+  background: #e7bc3b;
+}
+
+.testing-card--yellow:hover {
+  border-color: #e7bc3b;
+}
+
+.testing-card--yellow .testing-card-number {
+  background: #e7bc3b;
+  box-shadow: 0 4px 10px rgba(231, 188, 59, 0.3);
+}
+
+.testing-card--yellow:hover .testing-card-button {
+  background: #e7bc3b;
+  box-shadow: 0 4px 12px rgba(231, 188, 59, 0.4);
+}
+
+/* Тест 3 — зелёный */
+.testing-card--green::before,
+.testing-card--green .testing-card-number {
+  background: #A8D94A;
+}
+
+.testing-card--green:hover {
+  border-color: #A8D94A;
+}
+
+.testing-card--green .testing-card-number {
+  box-shadow: 0 4px 10px rgba(168, 217, 74, 0.3);
+}
+
+.testing-card--green:hover .testing-card-button {
+  background: #A8D94A;
+  box-shadow: 0 4px 12px rgba(168, 217, 74, 0.4);
+}
+
+/* Кнопка "Начать" */
+.testing-card-button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #4A4A4A 0%, #303030 100%);
+  color: #fff;
+  text-align: center;
+  font-family: 'Tuffy', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 12px;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  margin-top: auto;
+  transition: all 0.3s ease;
+}
+
+.testing-card:hover .testing-card-button {
+  background: linear-gradient(135deg, #A8D94A 0%, #8CC73F 100%);
+  box-shadow: 0 4px 12px rgba(168, 217, 74, 0.4);
+}
+
+/* Иконка стрелки */
+.testing-card-arrow {
+  display: inline-block;
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+.testing-card:hover .testing-card-arrow {
+  transform: translateX(5px);
+}
+
+
+/* ========================================
+   ПОДВАЛ
    ======================================== */
 
 .site-footer {
@@ -733,6 +957,7 @@ body {
   }
 }
 
+
 /* Тест секция */
 @media (max-width: 768px) {
   .test-section {
@@ -807,6 +1032,82 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+
+/* Страница тестов */
+@media (max-width: 768px) {
+  .testing-page {
+    padding: 40px 15px 60px;
+  }
+
+  .testing-title {
+    font-size: 48px;
+  }
+
+  .testing-subtitle {
+    font-size: 20px;
+  }
+
+  .testing-cards {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .testing-card {
+    max-width: 100%;
+    padding: 30px 25px;
+  }
+
+  .testing-card-number {
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
+  }
+
+  .testing-card-title {
+    font-size: 24px;
+  }
+
+  .testing-card-description {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .testing-title {
+    font-size: 38px;
+  }
+
+  .testing-subtitle {
+    font-size: 18px;
+  }
+
+  .testing-card {
+    padding: 25px 20px;
+  }
+
+  .testing-card-number {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .testing-card-title {
+    font-size: 22px;
+  }
+
+  .testing-card-description {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .testing-card-button {
+    padding: 12px;
+    font-size: 16px;
+  }
+}
+
 
 /* Подвал */
 @media (max-width: 768px) {
