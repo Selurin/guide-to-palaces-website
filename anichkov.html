@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="palace.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="icon" href="img/favicon.ico">
     <title>Аничков дворец | Царская тропа</title>
 </head>
@@ -29,10 +30,189 @@
         </div>
 
         <script src="scripts/timedate.js"></script>
+        </div>
     </nav>
 
     <main>
+        <h1 class="h-palace">Аничков дворец</h1>
+        <!-- Слайдер -->
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="img/anichkov/main-1.webp" type="image/webp">
+                        <img src="img/anichkov/main-1.jpg" alt="Зимний дворец - главное фото" loading="eager">
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="img/anichkov/main-2.webp" type="image/webp">
+                        <img src="img/anichkov/main-2.jpg" alt="Зимний дворец - фото сбоку" loading="eager">
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="img/index-photo/cards/anichkov.webp" type="image/webp">
+                        <img src="img/index-photo/cards/anichkov.jpg" alt="Зимний дворец - дополнительное фото"
+                            loading="lazy">
+                    </picture>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+
+        <!-- Слайдер JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+        <script src="scripts/slider.js"></script>
+
+        <!-- Основная информация -->
+        <section class="info-section">
+            <div class="decor-line" style="background-color: #D4C4A8;"></div>
+
+            <h2 class="info-main-title">Основная информация</h2>
+
+            <div class="info-cards-container">
+
+                <!-- Карточка 1 -->
+                <div class="info-card" style="background-color:#e7d6b9;">
+                    <h3 class="info-card-title">Адрес</h3>
+                    <p class="info-card-text">Невский проспект, 39<br>Санкт-Петербург</p>
+                </div>
+
+                <!-- Карточка 2 -->
+                <div class="info-card" style="background-color:#dac19a;">
+                    <h3 class="info-card-title">Годы постройки</h3>
+                    <p class="info-card-text">1741–1754</p>
+                </div>
+
+                <!-- Карточка 3 -->
+                <div class="info-card" style="background-color:#d6b785;">
+                    <h3 class="info-card-title">Стиль</h3>
+                    <p class="info-card-text">Елизаветинское барокко, перестроен под классицизм</p>
+                </div>
+            </div>
+
+            <!-- Карта -->
+            <div class="map-container">
+                <script type="text/javascript" charset="utf-8" async
+                    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Acdf48df6152d7e814f90dd8d7c4eb2ff5219873571ed42c156a065c3039e3ac8&amp;width=700&amp;height=700&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+            <p class="text-palace">Аничков дворец — один из императорских дворцов Санкт-Петербурга, старейшее
+                сохранившееся здание на Невском проспекте, расположенное у Аничкова моста на набережной реки Фонтанки.
+                Он был возведён по указу императрицы Елизаветы Петровны в стиле елизаветинского барокко.
+            </p>
+        </section>
+
+        <!-- История строительства -->
+        <section class="history-section" style="background: #fff9ee; border: 4px solid #f7d8a4;">
+            <div class="history-container">
+                <div class="history-header">
+                    <h2 class="history-title" style="color: #bb985d;">История строительства</h2>
+                </div>
+
+                <div class="history-content">
+                    <div class="history-image-wrapper">
+                        <img src="img/anichkov/history.jpg" alt="Зимний дворец" class="history-image" loading="lazy">
+                    </div>
+
+                    <div class="history-text">
+                        <p>Михаил Земцев, один из первых архитекторов Санкт-Петербурга, создал проект разноэтажного
+                            здания в виде растянутой буквы «Н», однако строительство завершить не успел. После его
+                            смерти в 1743 году архитектором стал Франческо Бартоломео Растрелли. Возведённый дворец
+                            императрица Елизавета Петровна подарила своему фавориту — Алексею Разумовскому.
+                        </p>
+
+                        <p>После того как Екатерина II взошла на трон, она выкупила Аничков дворец у брата Алексея
+                            Разумовского, Григория, и подарила своему возлюбленному – Григорию Потёмкину вместе с
+                            деньгами на обустройство дворца. В 1776—1778 годах произошла перестройка дворца, которой
+                            занимался архитектор И. Е. Старов. В результате гавань была засыпана, а дворец потерял
+                            характерную для барокко лепнину и приобрёл более классический стиль.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="interesting-fact-box"
+                    style="background: linear-gradient(135deg, rgb(255, 231, 189) 0%, #f7d8a4 100%);">
+                    <h3 class="fact-title">Интересный факт!</h3>
+                    <p class="fact-text">Во время правления Елизаветы Петровны для удобства доступа к дворцу от реки
+                        Фонтанки прорыли специальный канал, который заканчивался у входа небольшой гаванью. Позднее этот
+                        канал был засыпан по приказу Григория Потёмкина.
+                    </p>
+                </div>
+
+                <div class="history-footer-text">
+                    <p>В конце XVIII века во дворце располагался Кабинет Его Императорского Величества. Впоследствии
+                        Аничков дворец стал неоднократно выступать подарком на свадьбу.
+                    </p>
+
+                    <p>После революции во дворце располагался музей истории города, закрытый в 1925 году. 12 февраля
+                        1937 года здесь открылся Ленинградский Дворец пионеров, а во время войны – хирургический
+                        госпиталь. Сейчас в Аничковом дворце находится Дворец творчества юных и одноимённый лицей.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Архитектурные особенности -->
+        <section class="architecture-section">
+            <div class="architecture-container">
+                <h2 class="architecture-title">Архитектурные особенности</h2>
+
+                <div class="architecture-images">
+                    <div class="architecture-image-item">
+                        <img src="img/anichkov/architectory-1.jpg" alt="Зелёная гостиная" class="architecture-photo"
+                            loading="lazy">
+                        <p class="architecture-caption">Зелёная гостиная</p>
+                    </div>
+
+                    <div class="architecture-image-item">
+                        <img src="img/anichkov/architectory-2.jpg" alt="Оранжерея" class="architecture-photo"
+                            loading="lazy">
+                        <p class="architecture-caption">Оранжерея</p>
+                    </div>
+                </div>
+
+                <div class="architecture-text">
+                    <p>Фасад дворца, выполненный в классическом стиле, отличается строгой симметрией. Центральная часть
+                        выделена шестиколонным портиком и треугольным фронтоном. Боковые крылья здания украшены
+                        скульптурами и барельефами. Со стороны Фонтанки комплекс дополняют Кабинетный корпус и Служебный
+                        корпус, которые вместе с главным зданием образуют целостный архитектурный ансамбль.
+                    </p>
+                </div>
+            </div>
+        </section>
+
     </main>
+
+    <!-- Подвал -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-column">
+                    <a href="#" class="footer-link">Новости</a>
+                    <a href="#" class="footer-link">Памятка путешественника</a>
+                </div>
+                <div class="footer-column">
+                    <a href="#" class="footer-link">Тест</a>
+                    <a href="#" class="footer-link">Контакты</a>
+                </div>
+            </div>
+
+            <div class="footer-right">
+                <h3 class="footer-title">Популярные дворцы</h3>
+                <div class="footer-palaces">
+                    <a href="zimniy.html" class="footer-link">Зимний</a>
+                    <a href="petergof.html" class="footer-link">Петергоф</a>
+                    <a href="petra-2.html" class="footer-link">Петра II</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copyright">© 2026 • Selurin</p>
+        </div>
+    </footer>
 
 </body>
 
