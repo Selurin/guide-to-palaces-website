@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="palace.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="icon" href="img/favicon.ico">
     <title>Мариинский дворец | Царская тропа</title>
 </head>
@@ -29,10 +30,188 @@
         </div>
 
         <script src="scripts/timedate.js"></script>
+        </div>
     </nav>
 
     <main>
+        <h1 class="h-palace">Мариинский дворец</h1>
+        <!-- Слайдер -->
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="img/mariinskiy/main-1.webp" type="image/webp">
+                        <img src="img/mariinskiy/1.jpg" alt="Мариинский дворец - главное фото" loading="eager">
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="img/mariinskiy/main-2.webp" type="image/webp">
+                        <img src="img/mariinskiy/2.jpg" alt="Мариинский дворец - фото сбоку" loading="eager">
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="img/index-photo/cards/mariinskiy.webp" type="image/webp">
+                        <img src="img/index-photo/cards/mariinskiy.jpg" alt="Мариинский дворец - дополнительное фото"
+                            loading="lazy">
+                    </picture>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+
+        <!-- Слайдер JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+        <script src="scripts/slider.js"></script>
+
+        <!-- Основная информация -->
+        <section class="info-section">
+            <div class="decor-line" style="background-color: #87746a;"></div>
+
+            <h2 class="info-main-title">Основная информация</h2>
+
+            <div class="info-cards-container">
+
+                <!-- Карточка 1 -->
+                <div class="info-card" style="background-color:#ddc7bb;">
+                    <h3 class="info-card-title">Адрес</h3>
+                    <p class="info-card-text">Исаакиевская площадь 6,<br>Санкт-Петербург</p>
+                </div>
+
+                <!-- Карточка 2 -->
+                <div class="info-card" style="background-color:#caab9c;">
+                    <h3 class="info-card-title">Годы постройки</h3>
+                    <p class="info-card-text">1839–1844</p>
+                </div>
+
+                <!-- Карточка 3 -->
+                <div class="info-card" style="background-color:#b3907e;">
+                    <h3 class="info-card-title">Стиль</h3>
+                    <p class="info-card-text">Эклектика с элементами неоренессанса и классицизма</p>
+                </div>
+            </div>
+
+            <!-- Карта -->
+            <div class="map-container">
+                <script type="text/javascript" charset="utf-8" async 
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4917ca0a8d3b8b19856a79e1659c2f83be35b7dcc10ceb8b975b9e3f411f450d&amp;width=700&amp;height=700&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+            <p class="text-palace"> С момента своего открытия Мариинский дворец стал центром культурной жизни
+                Петербурга. Здесь проводились балы, приемы и концерты, собирая под своей крышей известных писателей,
+                художников и композиторов.</p>
+        </section>
+
+        <!-- История строительства -->
+        <section class="history-section" style="background: #fff9f5d0; border: 4px solid #ddc7bb;">
+            <div class="history-container">
+                <div class="history-header">
+                    <h2 class="history-title" style="color: #9b7663;">История строительства</h2>
+                </div>
+
+                <div class="history-content">
+                    <div class="history-image-wrapper">
+                        <img src="img/mariinskiy/history.png" alt="Мариинский дворец" class="history-image" loading="lazy">
+                    </div>
+
+                    <div class="history-text">
+                        <p>Он был построен в 1839–1844 годах по проекту архитектора Андрея Штакеншнейдера. Дворец был
+                            задуман как свадебный подарок для великой княжны Марии Николаевны, дочери императора Николая
+                            I, и её супруга, герцога Максимилиана Лейхтенбергского. Это решение было принято после того,
+                            как Мария отказалась уезжать за границу, что стало редким исключением для российских княжон
+                            того времени.
+                        </p>
+
+
+                    </div>
+                </div>
+
+                <div class="interesting-fact-box"
+                    style="background: linear-gradient(135deg, #ffe8db 0%, #e7b59c 100%);">
+                    <h3 class="fact-title">Интересный факт!</h3>
+                    <p class="fact-text"> При строительстве использовалось множество инновационных решений. Все
+                        перекрытия дворца были металлическими во избежание пожаров. Также были спроектированы система
+                        вентиляции помещений, водопровод и канализация. Залы дворца обогревались конвекционными
+                        амосовскими печами. На стенах жилых комнат не мрамор, а песчаник, благодаря которому в
+                        помещениях было тише и теплее. Парадная лестница сделана не перпендикулярно главному фасаду, а
+                        слева от вестибюля. Так архитектор уменьшал потери тепла.
+                    </p>
+                </div>
+
+                <div class="history-footer-text">
+                    <p>После Февральской революции во дворце расположилось Временное правительство. После ареста
+                        министров
+                        дворец был объявлен музеем, а оставшиеся ценности национализированы.</p>
+
+                    <p>Во время Великой Отечественной Войны в подвалах Зимнего дворца были обустроены бомбоубежища, было
+                        зафиксировано несколько прямых попаданий, но благодаря усилиям энтузиастов дворец продолжил свою
+                        работу
+                        уже осенью 1945 года.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Архитектурные особенности -->
+        <section class="architecture-section">
+            <div class="architecture-container">
+                <h2 class="architecture-title">Архитектурные особенности</h2>
+
+                <div class="architecture-images">
+                    <div class="architecture-image-item">
+                        <img src="img/mariinskiy/architectory-1.png" alt="Иорданская лестница"
+                            class="architecture-photo" loading="lazy">
+                        <p class="architecture-caption">Иорданская лестница</p>
+                    </div>
+
+                    <div class="architecture-image-item">
+                        <img src="img/mariinskiy/architectory-2.png" alt="Золотая гостиная Марии Александровны"
+                            class="architecture-photo" loading="lazy">
+                        <p class="architecture-caption">Золотая гостиная Марии Александровны</p>
+                    </div>
+                </div>
+
+                <div class="architecture-text">
+                    <p>Дворец выполнен в стиле неоклассицизма и гармонично вписывается в архитектурный ансамбль
+                        Исаакиевской площади. Главный фасад здания выделяется центральным ризалитом с арочным подъездом
+                        и широкой лестницей. Внутренние интерьеры дворца отличаются роскошью и разнообразием стилей:
+                        архитектор использовал принцип эклектики, что позволило создать уникальные и непохожие друг на
+                        друга залы. Например, парадная анфилада залов расположена перпендикулярно продольной оси здания,
+                        что было необычным для того времени.</p>
+                </div>
+            </div>
+        </section>
+
     </main>
+
+    <!-- Подвал -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-column">
+                    <a href="#" class="footer-link">Новости</a>
+                    <a href="#" class="footer-link">Памятка путешественника</a>
+                </div>
+                <div class="footer-column">
+                    <a href="#" class="footer-link">Тест</a>
+                    <a href="#" class="footer-link">Контакты</a>
+                </div>
+            </div>
+
+            <div class="footer-right">
+                <h3 class="footer-title">Популярные дворцы</h3>
+                <div class="footer-palaces">
+                    <a href="zimniy.html" class="footer-link">Зимний</a>
+                    <a href="petergof.html" class="footer-link">Петергоф</a>
+                    <a href="petra-2.html" class="footer-link">Петра II</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copyright">© 2026 • Selurin</p>
+        </div>
+    </footer>
 
 </body>
 

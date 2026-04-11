@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="palace.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="icon" href="img/favicon.ico">
     <title>Большой Гатчинский дворец | Царская тропа</title>
 </head>
@@ -29,10 +30,182 @@
         </div>
 
         <script src="scripts/timedate.js"></script>
+        </div>
     </nav>
 
     <main>
+        <h1 class="h-palace">Большой Гатчинский дворец</h1>
+        <!-- Слайдер -->
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="img/bolshoy-gatchinskiy/main-1.webp" type="image/webp">
+                        <img src="img/bolshoy-gatchinskiy/main-1.jpg" alt="Большой Гатчинский дворец - главное фото"
+                            loading="eager">
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="img/bolshoy-gatchinskiy/main-2.webp" type="image/webp">
+                        <img src="img/bolshoy-gatchinskiy/main-2.jpg" alt="Большой Гатчинский дворец - фото сбоку"
+                            loading="eager">
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="img/index-photo/cards/bolshoy-gatchinskiy.webp" type="image/webp">
+                        <img src="img/index-photo/cards/bolshoy-gatchinskiy.jpg"
+                            alt="Большой Гатчинский дворец - дополнительное фото" loading="lazy">
+                    </picture>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+
+        <!-- Слайдер JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+        <script src="scripts/slider.js"></script>
+
+        <!-- Основная информация -->
+        <section class="info-section">
+            <div class="decor-line" style="background-color: #f5e8a6;"></div>
+
+            <h2 class="info-main-title">Основная информация</h2>
+
+            <div class="info-cards-container">
+
+                <!-- Карточка 1 -->
+                <div class="info-card" style="background-color:#fff1ad;">
+                    <h3 class="info-card-title">Адрес</h3>
+                    <p class="info-card-text">Красноармейский просп. 1,<br>Гатчина, Санкт-Петербург</p>
+                </div>
+
+                <!-- Карточка 2 -->
+                <div class="info-card" style="background-color:#ffeb88;">
+                    <h3 class="info-card-title">Годы постройки</h3>
+                    <p class="info-card-text">1766—1781</p>
+                </div>
+
+                <!-- Карточка 3 -->
+                <div class="info-card" style="background-color:#ffe669;">
+                    <h3 class="info-card-title">Стиль</h3>
+                    <p class="info-card-text">Классицизм</p>
+                </div>
+            </div>
+
+            <!-- Карта -->
+            <div class="map-container">
+                <script type="text/javascript" charset="utf-8" async
+                    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5b53197b57047e52962fc0fdf0c608c616c81f6791b9d1ca0051aad32638408f&amp;width=700&amp;height=700&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+        </section>
+
+        <!-- История строительства -->
+        <section class="history-section" style="background: #fffcec; border: 4px solid #f5e8a6;">
+            <div class="history-container">
+                <div class="history-header">
+                    <h2 class="history-title" style="color: #ad982a;">История строительства</h2>
+                </div>
+
+                <div class="history-content">
+                    <div class="history-image-wrapper">
+                        <img src="img/bolshoy-gatchinskiy/history.jpg" alt="Тронный зал Павла 1" class="history-image"
+                            loading="lazy">
+                    </div>
+
+                    <div class="history-text">
+                        <p>Большой Гатчинский дворец построен в 1766—1781 годах в Гатчине по проекту
+                            итальянского архитектора Антонио Ринальди в стиле классицизма для фаворита Екатерины
+                            II графа Григория
+                            Григорьевича Орлова. Расположенный на холме над Серебряным озером дворец сочетает в себе
+                            темы
+                            средневекового за́мка и загородной резиденции. Интерьеры дворца — образец русского
+                            классицизма рубежа
+                            XVIII—XIX веков. Дворец был одним из любимых мест отдыха царской семьи.
+                        </p>
+
+                        <p>Здание первостепенно возводили для фаворита Екатерины II, но после
+                            смерти фаворита стал частью собственности семьи Романовых и стал резиденцией и крепостью для
+                            проживания их семьи и предоставлялось для важных политических деятелей того времени
+                        </p>
+                    </div>
+                </div>
+
+                <div class="interesting-fact-box"
+                    style="background: linear-gradient(135deg, #fff0a3 0%, #ffe357 100%);">
+                    <h3 class="fact-title">Интересный факт!</h3>
+                    <p class="fact-text"> Александр III — подолгу жил в Гатчинском дворце с семьей, за что получил
+                        прозвище «гатчинский затворник». В дворце император проводил совещания, принимал делегации
+                        иностранных гостей, утверждал назначения на должности.
+
+                    </p>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- Архитектурные особенности -->
+        <section class="architecture-section">
+            <div class="architecture-container">
+                <h2 class="architecture-title">Архитектурные особенности</h2>
+
+                <div class="architecture-images">
+                    <div class="architecture-image-item">
+                        <img src="img/bolshoy-gatchinskiy/architectory-1.jpg" alt="Спальня Александра 3"
+                            class="architecture-photo" loading="lazy">
+                        <p class="architecture-caption">Спальня Александра 3</p>
+                    </div>
+
+                    <div class="architecture-image-item">
+                        <img src="img/bolshoy-gatchinskiy/architectory-2.jpg" alt="Рабочий кабинет Александра III"
+                            class="architecture-photo" loading="lazy">
+                        <p class="architecture-caption">Рабочий кабинет Александра III</p>
+                    </div>
+                </div>
+
+                <div class="architecture-text">
+                    <p> Гатчинский дворец — центр, архитектурный и стилистический символ дворцово-паркового ансамбля.
+                        Архитектор Ринальди, занимавшийся разработкой проекта и строительством дворца синтезировал
+                        типологические черты подобных зданий, создав, в конечном итоге, своего рода архитектурную
+                        фантазию на тему рыцарского охотничьего замка. Несколько последующих крупных перестроек дворца
+                        не сильно повлияли на изначально задуманную тему.</p>
+                </div>
+            </div>
+        </section>
+
     </main>
+
+    <!-- Подвал -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-column">
+                    <a href="#" class="footer-link">Новости</a>
+                    <a href="#" class="footer-link">Памятка путешественника</a>
+                </div>
+                <div class="footer-column">
+                    <a href="#" class="footer-link">Тест</a>
+                    <a href="#" class="footer-link">Контакты</a>
+                </div>
+            </div>
+
+            <div class="footer-right">
+                <h3 class="footer-title">Популярные дворцы</h3>
+                <div class="footer-palaces">
+                    <a href="zimniy.html" class="footer-link">Зимний</a>
+                    <a href="petergof.html" class="footer-link">Петергоф</a>
+                    <a href="petra-2.html" class="footer-link">Петра II</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copyright">© 2026 • Selurin</p>
+        </div>
+    </footer>
 
 </body>
 

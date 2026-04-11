@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="palace.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="icon" href="img/favicon.ico">
     <title>Елагин дворец | Царская тропа</title>
 </head>
@@ -29,10 +30,189 @@
         </div>
 
         <script src="scripts/timedate.js"></script>
+        </div>
     </nav>
 
     <main>
+        <h1 class="h-palace">Елагин дворец</h1>
+        <!-- Слайдер -->
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="img/elagin/main-1.webp" type="image/webp">
+                        <img src="img/elagin/main-1.jpg" alt="Елагин дворец - главное фото" loading="eager">
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="img/elagin/main-2.webp" type="image/webp">
+                        <img src="img/elagin/main-2.jpg" alt="Елагин дворец - фото сбоку" loading="eager">
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="img/elagin/main-3.webp" type="image/webp">
+                        <img src="img/elagin/main-3.jpg" alt="Елагин дворец - дополнительное фото"
+                            loading="lazy">
+                    </picture>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+
+        <!-- Слайдер JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+        <script src="scripts/slider.js"></script>
+
+        <!-- Основная информация -->
+        <section class="info-section">
+            <div class="decor-line" style="background-color: #cacbc5;"></div>
+
+            <h2 class="info-main-title">Основная информация</h2>
+
+            <div class="info-cards-container">
+
+                <!-- Карточка 1 -->
+                <div class="info-card" style="background-color:#e0e0db;">
+                    <h3 class="info-card-title">Адрес</h3>
+                    <p class="info-card-text">Елагин остров 4,<br>Санкт-Петербург</p>
+                </div>
+
+                <!-- Карточка 2 -->
+                <div class="info-card" style="background-color:#d2d3ce;">
+                    <h3 class="info-card-title">Годы постройки</h3>
+                    <p class="info-card-text"> 1785—1790,<br> перестроен 1818–1822</p>
+                </div>
+
+                <!-- Карточка 3 -->
+                <div class="info-card" style="background-color:#c3c4bd;">
+                    <h3 class="info-card-title">Стиль</h3>
+                    <p class="info-card-text">Ампир</p>
+                </div>
+            </div>
+
+            <!-- Карта -->
+            <div class="map-container">
+                <script type="text/javascript" charset="utf-8" async
+                    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4917ca0a8d3b8b19856a79e1659c2f83be35b7dcc10ceb8b975b9e3f411f450d&amp;width=700&amp;height=700&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+            <p class="text-palace">Елагин дворец - это главная достопримечательность дворцово-паркового ансамбля на
+                Елагином
+                острове в Санкт-Петербурге. Также называется Елагинским или Елагиноостровским.
+            </p>
+        </section>
+
+        <!-- История строительства -->
+        <section class="history-section" style="background: rgb(252, 255, 255); border: 4px solid #cacbc5;">
+            <div class="history-container">
+                <div class="history-header">
+                    <h2 class="history-title" style="color: #70706c;">История строительства</h2>
+                </div>
+
+                <div class="history-content">
+                    <div class="history-image-wrapper">
+                        <img src="img/elagin/history.jpg" alt="Елагин дворец" class="history-image" loading="lazy">
+                    </div>
+
+                    <div class="history-text">
+                        <p>Елагин дворец ведёт свою историю с 1780‑х годов, когда остров и расположенная на нём вилла
+                            перешли во владение И. П. Елагина — по его фамилии дворец и получил название. Точный автор
+                            проекта первоначального здания неизвестен, хотя иногда предполагают, что это мог быть Дж.
+                            Кваренги. Первоначальный облик постройки не сохранился. В начале XIX века остров выкупил
+                            Александр I для своей матери — императрицы Марии Фёдоровны, которой стало сложно ездить в
+                            другие загородные резиденции.</p>
+                        <p> В 1818 году началась масштабная перестройка дворцового комплекса: Александр I поручил эту
+                            задачу А. Бетанкуру, который создал специальную комиссию и назначил главным архитектором К.
+                            И. Росси. В ходе работ трёхэтажный дворец перестроили (с сохранением фундамента и части
+                            конструкций старого особняка), возвели три дополнительных павильона, а также Кухонный и
+                            Конюшенный корпуса. После смерти Марии Фёдоровны в 1828 году дворец стал «запасной» царской
+                            резиденцией, а в начале XX века его передали под отдых премьер‑министров России — в том
+                            числе С. Ю. Витте и П. А. Столыпина.</p>
+                    </div>
+                </div>
+
+                <div class="interesting-fact-box"
+                    style="background: linear-gradient(135deg, #cacbc5 0%, #bbbbb9 100%);">
+                    <h3 class="fact-title">Интересный факт!</h3>
+                    <p class="fact-text">В 1817 году по указу императора Александра I Елагин остров был выкуплен в
+                        казну. Александр I пожелал создать на острове резиденцию для своей матери, вдовствующей
+                        императрицы Марии Фёдоровны.
+                    </p>
+                </div>
+
+                <div class="history-footer-text">
+                    <p>После Февральской революции во дворце расположилось Временное правительство. После ареста
+                        министров
+                        дворец был объявлен музеем, а оставшиеся ценности национализированы.</p>
+
+                    <p>Елагинский дворец в Санкт-Петербурге имеет историческое значение благодаря истории,
+                        архитектуре и интерьеру. Дворец — центральное сооружение дворцово-паркового ансамбля Елагина
+                        острова, памятник эпохи ампира. Сейчас он является музеем.</p>
+                </div>
+            </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Архитектурные особенности -->
+        <section class="architecture-section">
+            <div class="architecture-container">
+                <h2 class="architecture-title">Архитектурные особенности</h2>
+
+                <div class="architecture-images">
+                    <div class="architecture-image-item">
+                        <img src="img/elagin/architectory-1.jpg" alt="Внутри Елагинского дворца 1"
+                            class="architecture-photo" loading="lazy">
+                    </div>
+
+                    <div class="architecture-image-item">
+                        <img src="img/elagin/architectory-2.jpg" alt="Внутри Елагинского дворца 2"
+                            class="architecture-photo" loading="lazy">
+                    </div>
+                </div>
+
+                <div class="architecture-text">
+                    <p>Елагинского дворца на Елагином острове в Санкт-Петербурге связаны с проектом архитектора К. И.
+                        Росси, который перестроил существующее ещё в XVIII веке здание. Росси сохранил фундамент,
+                        подвалы и старые кирпичные стены елагинского особняка, но увеличил объём нового дворца за счёт
+                        надстройки третьего этажа и купола, венчающего здание.
+                    </p>
+                </div>
+            </div>
+        </section>
+
     </main>
+
+    <!-- Подвал -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-column">
+                    <a href="#" class="footer-link">Новости</a>
+                    <a href="#" class="footer-link">Памятка путешественника</a>
+                </div>
+                <div class="footer-column">
+                    <a href="#" class="footer-link">Тест</a>
+                    <a href="#" class="footer-link">Контакты</a>
+                </div>
+            </div>
+
+            <div class="footer-right">
+                <h3 class="footer-title">Популярные дворцы</h3>
+                <div class="footer-palaces">
+                    <a href="zimniy.html" class="footer-link">Зимний</a>
+                    <a href="petergof.html" class="footer-link">Петергоф</a>
+                    <a href="petra-2.html" class="footer-link">Петра II</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copyright">© 2026 • Selurin</p>
+        </div>
+    </footer>
 
 </body>
 
