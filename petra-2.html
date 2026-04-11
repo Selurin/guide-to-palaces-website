@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="palace.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="icon" href="img/favicon.ico">
     <title>Дворец Петра II | Царская тропа</title>
 </head>
@@ -29,10 +30,178 @@
         </div>
 
         <script src="scripts/timedate.js"></script>
+        </div>
     </nav>
 
     <main>
+        <h1 class="h-palace">Дворец Петра II</h1>
+        <!-- Слайдер -->
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="img/petra-2/main-1.webp" type="image/webp">
+                        <img src="img/petra-2/main-1.jpg" alt="Дворец Петра II - главное фото" loading="eager">
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="img/petra-2/main-2.webp" type="image/webp">
+                        <img src="img/petra-2/main-2.jpg" alt="Дворец Петра II - фото сбоку" loading="eager">
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="img/index-photo/cards/petra-2.webp" type="image/webp">
+                        <img src="img/index-photo/cards/petra-2.jpg" alt="Дворец Петра II - дополнительное фото"
+                            loading="lazy">
+                    </picture>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+
+        <!-- Слайдер JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+        <script src="scripts/slider.js"></script>
+
+        <!-- Основная информация -->
+        <section class="info-section">
+            <div class="decor-line" style="background-color: #D48840;"></div>
+
+            <h2 class="info-main-title">Основная информация</h2>
+
+            <div class="info-cards-container">
+
+                <!-- Карточка 1 -->
+                <div class="info-card" style="background-color:#ffc187;">
+                    <h3 class="info-card-title">Адрес</h3>
+                    <p class="info-card-text">Университетская наб. 7-9-11В,<br>Санкт-Петербург</p>
+                </div>
+
+                <!-- Карточка 2 -->
+                <div class="info-card" style="background-color:#f5b070;">
+                    <h3 class="info-card-title">Годы постройки</h3>
+                    <p class="info-card-text">1727-1730, <br>продолжение строительства:<br>1759–1761</p>
+                </div>
+
+                <!-- Карточка 3 -->
+                <div class="info-card" style="background-color:#eca15a;">
+                    <h3 class="info-card-title">Стиль</h3>
+                    <p class="info-card-text">Петровское барокко</p>
+                </div>
+            </div>
+
+            <!-- Карта -->
+            <div class="map-container">
+                <script type="text/javascript" charset="utf-8" async 
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4917ca0a8d3b8b19856a79e1659c2f83be35b7dcc10ceb8b975b9e3f411f450d&amp;width=700&amp;height=700&amp;lang=ru_RU&amp;scroll=true"></script>
+        </section>
+
+        <!-- История строительства -->
+        <section class="history-section" style="background: #fff8f1; border: 4px solid #D48840;">
+            <div class="history-container">
+                <div class="history-header">
+                    <h2 class="history-title" style="color: #a86c34;">История строительства</h2>
+                </div>
+
+                <div class="history-content">
+                    <div class="history-image-wrapper">
+                        <img src="img/petra-2/history.jpg" alt="Дворец Петра II" class="history-image" loading="lazy">
+                    </div>
+
+                    <div class="history-text">
+                        <p>Дворец Петра II в Санкт‑Петербурге начали строить в 1727 году — закладка состоялась 11 июня
+                            при участии самого юного императора и архитектора Доменико Трезини. Инициатором выступил
+                            Александр Меншиков: он планировал породниться с царской семьёй — его дочь была обручена с
+                            Петром II. Дворец возводили на участке, где раньше стоял дом дворецкого Меншикова Фёдора
+                            Соловьёва — это строение вошло в состав нового здания.</p>
+
+                        <p>Пётр II так и не поселился во дворце: в 1728 году он переехал с правительством в Москву, а
+                            после его смерти в 1730‑м строительство остановили. В 1735 году участок выкупила Коллегия
+                            иностранных дел — в недостроенном здании разместили дом для представителей восточных
+                            диаспор, а цокольный этаж использовали как склад. С 1745 года здесь жила грузинская царица
+                            Анна.</p>
+                    </div>
+                </div>
+
+                <div class="interesting-fact-box"
+                    style="background: linear-gradient(135deg, #eeb47f 0%, #ffaa5b 100%);">
+                    <h3 class="fact-title">Интересный факт!</h3>
+                    <p class="fact-text">в XIX веке, когда во дворце размещался Императорский историко‑филологический
+                        институт
+                    </p>
+                </div>
+
+                <div class="history-footer-text">
+                    <p>В советское время здесь работали разные учреждения: от Научного общества марксистов до
+                        Географо‑экономического исследовательского института и Ленинградского института литературы и
+                        истории. С 1944 года в здании размещаются Восточный и Филологический факультеты
+                        Санкт‑Петербургского государственного университета. </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Архитектурные особенности -->
+        <section class="architecture-section">
+            <div class="architecture-container">
+                <h2 class="architecture-title">Архитектурные особенности</h2>
+
+                <div class="architecture-images">
+                    <div class="architecture-image-item">
+                        <img src="img/petra-2/architectory-1.jpg" alt="Дворец Меншикова" class="architecture-photo"
+                            loading="lazy">
+                        <p class="architecture-caption">Дворец Меншикова</p>
+                    </div>
+
+                    <div class="architecture-image-item">
+                        <img src="img/petra-2/architectory-2.jpg" alt="Дворец Петра I" class="architecture-photo"
+                            loading="lazy">
+                        <p class="architecture-caption">Дворец Петра I</p>
+                    </div>
+                </div>
+
+                <div class="architecture-text">
+                    <p> Внешний облик дворца Петра II в Санкт-Петербурге напоминает соседний Меншиковский дворец. Это
+                        связано с тем, что по замыслу архитектора Доменико Трезини дворец повторял планировку дворца
+                        Меншикова — замкнутую планировку с внутренним двором и выездными задними воротами. Рядом с
+                        дворцом находится музей “Кунсткамера”
+                    </p>
+                </div>
+            </div>
+        </section>
+
     </main>
+
+    <!-- Подвал -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-column">
+                    <a href="#" class="footer-link">Новости</a>
+                    <a href="#" class="footer-link">Памятка путешественника</a>
+                </div>
+                <div class="footer-column">
+                    <a href="#" class="footer-link">Тест</a>
+                    <a href="#" class="footer-link">Контакты</a>
+                </div>
+            </div>
+
+            <div class="footer-right">
+                <h3 class="footer-title">Популярные дворцы</h3>
+                <div class="footer-palaces">
+                    <a href="zimniy.html" class="footer-link">Зимний</a>
+                    <a href="petergof.html" class="footer-link">Петергоф</a>
+                    <a href="petra-2.html" class="footer-link">Петра II</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copyright">© 2026 • Selurin</p>
+        </div>
+    </footer>
 
 </body>
 

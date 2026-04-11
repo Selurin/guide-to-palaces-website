@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="palace.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="icon" href="img/favicon.ico">
     <title>Ново-Михайловский дворец | Царская тропа</title>
 </head>
@@ -29,10 +30,183 @@
         </div>
 
         <script src="scripts/timedate.js"></script>
+        </div>
     </nav>
 
     <main>
+        <h1 class="h-palace">Ново-Михайловский дворец</h1>
+        <!-- Слайдер -->
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="img/novo-mihaylovskiy/main-1.webp" type="image/webp">
+                        <img src="img/novo-mihaylovskiy/main-1.jpg" alt="Ново-Михайловский дворец - главное фото"
+                            loading="eager">
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="img/novo-mihaylovskiy/main-2.webp" type="image/webp">
+                        <img src="img/novo-mihaylovskiy/main-2.jpg" alt="Ново-Михайловский дворец - фото сбоку"
+                            loading="eager">
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="img/novo-mihaylovskiy/main-3.webp" type="image/webp">
+                        <img src="img/novo-mihaylovskiy/main-3.jpg"
+                            alt="Ново-Михайловский дворец - дополнительное фото" loading="lazy">
+                    </picture>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+
+        <!-- Слайдер JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+        <script src="scripts/slider.js"></script>
+
+        <!-- Основная информация -->
+        <section class="info-section">
+            <div class="decor-line" style="background-color: #8898A8;"></div>
+
+            <h2 class="info-main-title">Основная информация</h2>
+
+            <div class="info-cards-container">
+
+                <!-- Карточка 1 -->
+                <div class="info-card" style="background-color:#d0d9e0;">
+                    <h3 class="info-card-title">Адрес</h3>
+                    <p class="info-card-text">Дворцовая наб. 18, <br>Санкт-Петербург</p>
+                </div>
+
+                <!-- Карточка 2 -->
+                <div class="info-card" style="background-color:#c1cad3;">
+                    <h3 class="info-card-title">Годы постройки</h3>
+                    <p class="info-card-text">1857–1862</p>
+                </div>
+
+                <!-- Карточка 3 -->
+                <div class="info-card" style="background-color:#b1bac4;">
+                    <h3 class="info-card-title">Стиль</h3>
+                    <p class="info-card-text">Эклектика, сочетающая элементы барокко и ренессанса</p>
+                </div>
+            </div>
+
+            <!-- Карта -->
+            <div class="map-container">
+               <script type="text/javascript" charset="utf-8" async 
+               src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A77edea6cc056dfecedd5f8d31401fcf21a31097613233e1dea47a2d6f334f6b4&amp;width=700&amp;height=700&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+            <p class="text-palace"> Ново-Михайловский дворец — один из самых выразительных дворцовых ансамблей
+                Санкт-Петербурга, расположенный на престижной Дворцовой набережной. Возведённый в 1857–1862 годах по
+                заказу великого князя Михаила Николаевича, сына императора Николая I, дворец стал не только роскошной
+                резиденцией, но и ярким свидетельством архитектурных поисков середины XIX века.</p>
+        </section>
+
+        <!-- История строительства -->
+        <section class="history-section" style="background: #f0f3f5; border: 4px solid #a8b8c7;">
+            <div class="history-container">
+                <div class="history-header">
+                    <h2 class="history-title" style="color: #627180;">История строительства</h2>
+                </div>
+
+                <div class="history-content">
+                    <div class="history-image-wrapper">
+                        <img src="img/novo-mihaylovskiy/history.jpg" alt="Ново-Михайловский дворец"
+                            class="history-image" loading="lazy">
+                    </div>
+
+                    <div class="history-text">
+                        <p>Возведён в 1857–1862 годах по заказу великого князя Михаила Николаевича, сына императора
+                            Николая I. Ново-Михайловский дворец был построен на месте, где ранее находились владения
+                            графов Шереметевых. В начале XIX века участок был выкуплен Департаментом уделов и
+                            перестроен. Дворец стал резиденцией великого князя Михаила Николаевича, который был не
+                            только членом императорской семьи, но и активным участником государственной жизни.
+                        </p>
+
+                        <p> В 1889 году во дворце было проведено электричество, что свидетельствовало о его современном
+                            оснащении для того времени. После революции 1917 года дворец был национализирован и в
+                            настоящее время в его залах располагаются различные институты Российской академии наук.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="interesting-fact-box"
+                    style="background: linear-gradient(135deg, #cedbe7 0%, #c7d1db 100%);">
+                    <h3 class="fact-title">Интересный факт!</h3>
+                    <p class="fact-text">Ново-Михайловский дворец получил своё название, чтобы отличаться от уже
+                        существующего Михайловского дворца, который был построен ранее для другого члена императорской
+                        семьи.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Архитектурные особенности -->
+        <section class="architecture-section">
+            <div class="architecture-container">
+                <h2 class="architecture-title">Архитектурные особенности</h2>
+
+                <div class="architecture-images">
+                    <div class="architecture-image-item">
+                        <img src="img/novo-mihaylovskiy/architectory-1.jpg" alt="Центральный и боковые ризалиты дворца"
+                            class="architecture-photo" loading="lazy">
+                        <p class="architecture-caption">Центральный и боковые ризалиты дворца</p>
+                    </div>
+
+                    <div class="architecture-image-item">
+                        <img src="img/novo-mihaylovskiy/architectory-2.jpg" alt="Фронтон"
+                            class="architecture-photo" loading="lazy">
+                        <p class="architecture-caption">Фронтон</p>
+                    </div>
+                </div>
+
+                <div class="architecture-text">
+                    <p> Ново-Михайловский дворец представляет собой яркий пример эклектики, сочетающей элементы барокко
+                        и ренессанса. Архитектор Штакеншнейдер сохранил стены и фундамент старого здания Министерства
+                        уделов, что позволило создать уникальный архитектурный ансамбль. Фасад здания оформлен с
+                        использованием ризалитов, фронтонов и балюстрад с вазами. Главный вход украшен чугунными
+                        колоннами и кариатидами, выполненными из терракоты. Внутренние интерьеры отличаются пышной
+                        лепниной, декоративной росписью и мраморной облицовкой. Использованы ценные породы дерева,
+                        кожаная обивка с позолотой и изделия из бронзы.
+                    </p>
+                </div>
+            </div>
+        </section>
+
     </main>
+
+    <!-- Подвал -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-column">
+                    <a href="#" class="footer-link">Новости</a>
+                    <a href="#" class="footer-link">Памятка путешественника</a>
+                </div>
+                <div class="footer-column">
+                    <a href="#" class="footer-link">Тест</a>
+                    <a href="#" class="footer-link">Контакты</a>
+                </div>
+            </div>
+
+            <div class="footer-right">
+                <h3 class="footer-title">Популярные дворцы</h3>
+                <div class="footer-palaces">
+                    <a href="zimniy.html" class="footer-link">Зимний</a>
+                    <a href="petergof.html" class="footer-link">Петергоф</a>
+                    <a href="petra-2.html" class="footer-link">Петра II</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copyright">© 2026 • Selurin</p>
+        </div>
+    </footer>
 
 </body>
 

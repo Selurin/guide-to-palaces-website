@@ -782,18 +782,44 @@ body {
 /* ========================================
    ПАМЯТКА ПУТЕШЕСТВЕННИКУ
    ======================================== */
+   table {
+  width: 100%;
+  /* Схлопывание границ в одну */
+  border-collapse: collapse; 
+}
 
-.h1-meno {
+table, th, td {
+  /* Толщина, стиль и цвет линии */
+  border: 1px solid black; 
+}
+
+th, td {
+  /* Добавление отступов внутри ячеек */
+  padding: 10px;
+  text-align: left;
+}
+
+th, td, .p-memo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Tahoma;
+  font-family:Sitka Small;
+}
+
+thead {
+  color:#09017c;
+}
+
+.h1-memo {
   font-family: "Vollkorn SC", serif;
   font-size: 52px;
-  color: #222222;
+  color: #b92781;
   text-align: center;
   margin: 40px 0 20px;
   font-weight: 700;
 }
 
-.p-meno {
-  max-width: 1200px;
+.p-memo {
   margin: 0 auto 40px;
   padding: 0 40px;
   font-size: 20px;

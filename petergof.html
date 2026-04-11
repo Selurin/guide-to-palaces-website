@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="palace.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="icon" href="img/favicon.ico">
     <title>Петергоф | Царская тропа</title>
 </head>
@@ -29,10 +30,181 @@
         </div>
 
         <script src="scripts/timedate.js"></script>
+        </div>
     </nav>
 
     <main>
+        <h1 class="h-palace">Петергоф</h1>
+        <!-- Слайдер -->
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="img/index-photo/cards/petergof.webp">
+                        <img src="img/index-photo/cards/petergof.jpg" alt="Петергоф - главное фото" loading="eager">
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="img/petergof/main-2.webp" type="image/webp">
+                        <img src="img/petergof/main-1.jpg" alt="Петергоф - фото сбоку" loading="eager">
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="img/petergof/main-1.webp" type="image/webp">
+                        <img src="img/petergof/main-2.jpg" alt="Петергоф - дополнительное фото"
+                            loading="lazy">
+                    </picture>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+
+        <!-- Слайдер JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+        <script src="scripts/slider.js"></script>
+
+        <!-- Основная информация -->
+        <section class="info-section">
+            <div class="decor-line" style="background-color: #e3ac3c;"></div>
+
+            <h2 class="info-main-title">Основная информация</h2>
+
+            <div class="info-cards-container">
+
+                <!-- Карточка 1 -->
+                <div class="info-card" style="background-color:#ffe1a5;">
+                    <h3 class="info-card-title">Адрес</h3>
+                    <p class="info-card-text">Петергоф,<br>Санкт-Петербург</p>
+                </div>
+
+                <!-- Карточка 2 -->
+                <div class="info-card" style="background-color:#ffcc67;">
+                    <h3 class="info-card-title">Годы постройки</h3>
+                    <p class="info-card-text">1714—1725<br>перестройка 1745—1752</p>
+                </div>
+
+                <!-- Карточка 3 -->
+                <div class="info-card" style="background-color:#ffc145;">
+                    <h3 class="info-card-title">Стиль</h3>
+                    <p class="info-card-text"> «Петровское барокко», <br> Зрелое барокко</p>
+                </div>
+            </div>
+
+            <!-- Карта -->
+            <div class="map-container">
+                <script type="text/javascript" charset="utf-8" async 
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4234277c760c2e49ca9991a76f77868117793a08d9055a3b8e796ee3a1eec860&amp;width=700&amp;height=700&amp;lang=ru_RU&amp;scroll=true"></script>
+        </section>
+
+        <!-- История строительства -->
+        <section class="history-section" style="background: #fff7e7; border: 4px solid #ffc145;">
+            <div class="history-container">
+                <div class="history-header">
+                    <h2 class="history-title" style="color: #c49536;">История строительства</h2>
+                </div>
+
+                <div class="history-content">
+                    <div class="history-image-wrapper">
+                        <img src="img/petergof/history.jpg" alt="Петергоф" class="history-image" loading="lazy">
+                    </div>
+
+                    <div class="history-text">
+                        <p>История Петергофа началась в начале XVIII века: Пётр I выбрал место с родниками на Ропшинских
+                            высотах для загородной резиденции — они обеспечивали естественное водоснабжение фонтанов. В
+                            1711 году стартовали строительные работы (руководили Ульян Сенявин, Йозеф Браунштайн, затем
+                            Жан‑Батист Леблон), в 1714‑м заложили фундаменты Верхних палат и дворца «Монплезир». В
+                            1721‑м провели пробный пуск воды в Большой каскад, а 15 августа 1723 года Петергоф
+                            торжественно открыли как резиденцию, призванную сравниться с европейскими дворцами.</p>
+                        <p>После смерти Петра I строительство приостановилось, но возобновилось при Анне Иоанновне:
+                            появились фонтан «Самсон» (1735), Драконовый каскад и «Римские фонтаны». При Елизавете
+                            Петровне Франческо Растрелли перестроил Большой дворец (1745–1747), а при Николае I возникла
+                            резиденция Александрия и новые парки. В 1918 году дворец стал музеем.</p>
+                    </div>
+                </div>
+
+                <div class="interesting-fact-box"
+                    style="background: linear-gradient(135deg, #ffdb94 0%, #ffc655 100%);">
+                    <h3 class="fact-title">Интересный факт!</h3>
+                    <p class="fact-text">К несчастью Петергоф был разрушен Великой отечественной войной, и только в 1952
+                        году вернул родной для себя облик, цельного и величественного здания 18 века
+                    </p>
+                </div>
+
+                <div class="history-footer-text">
+                    <p>Петергоф (Петродворец) сыграл историческую роль как летняя резиденция Петра I. Ансамбль,
+                        расположенный на южном берегу Финского залива, в 29 км от Санкт-Петербурга, был задуман не
+                        только как царская резиденция, но и как символ могущества России — расположенный на отвоёванном
+                        у Швеции Финском заливе, он должен был впечатлить северного соседа своим великолепием и
+                        масштабом. .</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Архитектурные особенности -->
+        <section class="architecture-section">
+            <div class="architecture-container">
+                <h2 class="architecture-title">Архитектурные особенности</h2>
+
+                <div class="architecture-images">
+                    <div class="architecture-image-item">
+                        <img src="img/petergof/architectory-1.jpg" alt="Памятник Самсону, разрывающему пасть льву" class="architecture-photo"
+                            loading="lazy">
+                        <p class="architecture-caption">Памятник Самсону, разрывающему пасть льву</p>
+                    </div>
+
+                    <div class="architecture-image-item">
+                        <img src="img/petergof/architectory-2.jpg" alt="Памятник Нептуну"
+                            class="architecture-photo" loading="lazy">
+                        <p class="architecture-caption">Памятник Нептуну</p>
+                    </div>
+                </div>
+
+                <div class="architecture-text">
+                    <p>Длина обращённого к морю фасада — 268 м.
+                        Взаимосвязанные объёмы дворца ритмически нарастают к центру. Средняя часть дворца, самая
+                        крупная, имеет три этажа, она связана с двухэтажными симметричными Церковным флигелем и флигелем
+                        «Под гербом» неширокими аркадами. С южной стороны здание п-образное, с двумя трёхэтажными
+                        корпусами по бокам. У дворца высокая фигурная кровля, украшенная сложной по форме золочёной
+                        вазой. В отделке фасадов использованы раскреповки, русты, картуши над оконными проёмами, во
+                        фронтонах расположены барельефы, балконы украшены узорными решётками
+                    </p>
+                </div>
+            </div>
+        </section>
+
     </main>
+
+    <!-- Подвал -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-column">
+                    <a href="#" class="footer-link">Новости</a>
+                    <a href="#" class="footer-link">Памятка путешественника</a>
+                </div>
+                <div class="footer-column">
+                    <a href="#" class="footer-link">Тест</a>
+                    <a href="#" class="footer-link">Контакты</a>
+                </div>
+            </div>
+
+            <div class="footer-right">
+                <h3 class="footer-title">Популярные дворцы</h3>
+                <div class="footer-palaces">
+                    <a href="zimniy.html" class="footer-link">Зимний</a>
+                    <a href="petergof.html" class="footer-link">Петергоф</a>
+                    <a href="petra-2.html" class="footer-link">Петра II</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copyright">© 2026 • Selurin</p>
+        </div>
+    </footer>
 
 </body>
 

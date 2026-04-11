@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="palace.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="icon" href="img/favicon.ico">
     <title>Таврический дворец | Царская тропа</title>
 </head>
@@ -29,10 +30,185 @@
         </div>
 
         <script src="scripts/timedate.js"></script>
+        </div>
     </nav>
 
     <main>
+        <h1 class="h-palace">Таврический дворец</h1>
+        <!-- Слайдер -->
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="img/tavricheskiy/main-1.webp" type="image/webp">
+                        <img src="img/tavricheskiy/main-1.jpg" alt="Таврический дворец - главное фото" loading="eager">
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="img/tavricheskiy/main-2.webp" type="image/webp">
+                        <img src="img/tavricheskiy/main-2.jpg" alt="Таврический дворец - фото сбоку" loading="eager">
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="img/index-photo/cards/tavricheskiy.webp" type="image/webp">
+                        <img src="img/index-photo/cards/tavricheskiy.jpg" alt="Таврический дворец - дополнительное фото"
+                            loading="lazy">
+                    </picture>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+
+        <!-- Слайдер JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+        <script src="scripts/slider.js"></script>
+
+        <!-- Основная информация -->
+        <section class="info-section">
+            <div class="decor-line" style="background-color: #46b488;"></div>
+
+            <h2 class="info-main-title">Основная информация</h2>
+
+            <div class="info-cards-container">
+
+                <!-- Карточка 1 -->
+                <div class="info-card" style="background-color:#3bfaae;">
+                    <h3 class="info-card-title">Адрес</h3>
+                    <p class="info-card-text">Шпалерная ул. 47,<br>Санкт-Петербург</p>
+                </div>
+
+                <!-- Карточка 2 -->
+                <div class="info-card" style="background-color:#3ee7a3;">
+                    <h3 class="info-card-title">Годы постройки</h3>
+                    <p class="info-card-text">1783-1789</p>
+                </div>
+
+                <!-- Карточка 3 -->
+                <div class="info-card" style="background-color:#3ad497;">
+                    <h3 class="info-card-title">Стиль</h3>
+                    <p class="info-card-text">Классицизм</p>
+                </div>
+            </div>
+
+            <!-- Карта -->
+            <div class="map-container">
+                <script type="text/javascript" charset="utf-8" async 
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A70e43cae4e26442426022102b201677c551677452bfd0d8ea1a39eeecb4ab546&amp;width=700&amp;height=700&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+        </section>
+
+        <!-- История строительства -->
+        <section class="history-section" style="background: #edfff8; border: 4px solid #2bb67e;">
+            <div class="history-container">
+                <div class="history-header">
+                    <h2 class="history-title" style="color: #22835c;">История строительства</h2>
+                </div>
+
+                <div class="history-content">
+                    <div class="history-image-wrapper">
+                        <img src="img/tavricheskiy/history.jpg" alt="Таврический дворец" class="history-image"
+                            loading="lazy">
+                    </div>
+
+                    <div class="history-text">
+                        <p>Таврический дворец в Санкт‑Петербурге возвели в 1783–1789 годах по проекту архитектора И. Е.
+                            Старова для князя Григория Потёмкина — фаворита Екатерины II. Строительство финансировала
+                            императрица; на него потратили около 400 000 рублей золотом. Название дворец получил позже —
+                            в честь титула князя Таврического, пожалованного Потёмкину в 1787 году после присоединения
+                            Крыма (Тавриды) к Российской империи. Князь редко жил во дворце; в 1791 году, незадолго до
+                            смерти, он устроил здесь пышное торжество в честь Екатерины II. После смерти Потёмкина
+                            резиденция перешла в казну: Екатерина II любила бывать здесь в последние годы жизни. При
+                            Павле I дворец отдали под казармы Конногвардейского полка, а при Александре I восстановили
+                            как императорскую резиденцию.</p>
+                    </div>
+                </div>
+
+                <div class="interesting-fact-box"
+                    style="background: linear-gradient(135deg, #3ae09e 0%, #0fc47b 100%);">
+                    <h3 class="fact-title">Интересный факт!</h3>
+                    <p class="fact-text"> Дворец считается одним из крупнейших зданий XVIII века не только в России, но
+                        и в Европе. Его главный фасад протянулся более чем на 250 метров, а высота центрального здания
+                        составляет 12 метров. Архитектурный ансамбль включает шестиколонный портик в дорическом стиле и
+                        купол над центральным залом.
+
+                    </p>
+                </div>
+
+                <div class="history-footer-text">
+                    <p>В 1906–1910 годах здание перестроили для размещения Государственной думы. В 1917 году дворец стал
+                        центром политической жизни: здесь заседали Временный комитет
+                        Госдумы, Временное правительство и Петроградский совет рабочих депутатов, прошёл I Всероссийский
+                        съезд Советов (июнь 1917), а в январе 1918‑го состоялось заседание Всероссийского учредительного
+                        собрания. В раннее советское время во дворце проходили важные съезды, а до 1990 года здесь
+                        размещалась Ленинградская высшая партийная школа.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Архитектурные особенности -->
+        <section class="architecture-section">
+            <div class="architecture-container">
+                <h2 class="architecture-title">Архитектурные особенности</h2>
+
+                <div class="architecture-images">
+                    <div class="architecture-image-item">
+                        <img src="img/tavricheskiy/architectory-1.jpg" alt="Екатерининский зал"
+                            class="architecture-photo" loading="lazy">
+                        <p class="architecture-caption">Екатерининский зал</p>
+                    </div>
+
+                    <div class="architecture-image-item">
+                        <img src="img/tavricheskiy/architectory-2.jpg" alt="Думский зал" class="architecture-photo"
+                            loading="lazy">
+                        <p class="architecture-caption">Думский зал</p>
+                    </div>
+                </div>
+
+                <div class="architecture-text">
+                    <p> Таврический дворец — один из самых известных и значимых архитектурных памятников
+                        Санкт-Петербурга. Здание выполнено в стиле классицизма, который характеризуется строгими
+                        линиями, симметрией и
+                        гармонией пропорций. Фасад дворца украшен дорическим портиком, а садовый фасад оформлен в виде
+                        полуротонды с круглым балконом. Два небольших флигеля увенчаны купольными башнями, что придаёт
+                        зданию величественный вид. Интерьеры дворца отличались роскошью: ротонда, украшенная лепниной,
+                        фигурные печи, камины и расписные стены создавали атмосферу великолепия.</p>
+                </div>
+            </div>
+        </section>
+
     </main>
+
+    <!-- Подвал -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-column">
+                    <a href="#" class="footer-link">Новости</a>
+                    <a href="#" class="footer-link">Памятка путешественника</a>
+                </div>
+                <div class="footer-column">
+                    <a href="#" class="footer-link">Тест</a>
+                    <a href="#" class="footer-link">Контакты</a>
+                </div>
+            </div>
+
+            <div class="footer-right">
+                <h3 class="footer-title">Популярные дворцы</h3>
+                <div class="footer-palaces">
+                    <a href="zimniy.html" class="footer-link">Зимний</a>
+                    <a href="petergof.html" class="footer-link">Петергоф</a>
+                    <a href="petra-2.html" class="footer-link">Петра II</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copyright">© 2026 • Selurin</p>
+        </div>
+    </footer>
 
 </body>
 
