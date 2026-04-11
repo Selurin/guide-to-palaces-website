@@ -849,36 +849,20 @@ thead {
 
 .footer-content {
   background: #4A4A4A;
-  padding: 40px 60px 0;
+  padding: 30px 60px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   gap: 40px;
-}
-
-.footer-left {
-  display: flex;
-  gap: 60px;
+  flex-wrap: wrap;
 }
 
 .footer-column {
   display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.footer-copyright {
-  color: #FFFFFF;
-  font-size: 18px;
-  margin: 0;
-  text-align: center;
-  padding-top: 20px;
-  border-top: 1px solid #4A4A4A;
-}
-
-.footer-bottom {
-  background: #4A4A4A;
-  padding: 0 60px 17px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 12px 30px;
+  align-items: center;
 }
 
 .footer-right {
@@ -904,6 +888,7 @@ thead {
   text-decoration: underline;
   font-size: 18px;
   transition: opacity 0.3s ease;
+  white-space: nowrap;
 }
 
 .footer-link:hover {
@@ -1209,18 +1194,14 @@ thead {
 @media (max-width: 768px) {
   .footer-content {
     flex-direction: column;
-    padding: 30px 20px 0;
+    padding: 30px 20px;
     gap: 30px;
-  }
-
-  .footer-left {
-    flex-direction: column;
-    gap: 30px;
-    width: 100%;
   }
 
   .footer-column {
+    flex-direction: column;
     gap: 10px;
+    width: 100%;
   }
 
   .footer-right {
@@ -1232,10 +1213,6 @@ thead {
     flex-direction: column;
     gap: 10px;
     justify-content: flex-start;
-  }
-
-  .footer-bottom {
-    padding: 0 20px 17px;
   }
 
   /* Памятка путешественнику - адаптивность */
