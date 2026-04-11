@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="palace.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="icon" href="img/favicon.ico">
     <title>Михайловский замок | Царская тропа</title>
 </head>
@@ -29,10 +30,185 @@
         </div>
 
         <script src="scripts/timedate.js"></script>
+        </div>
     </nav>
 
     <main>
+        <h1 class="h-palace">Михайловский замок</h1>
+        <!-- Слайдер -->
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="img/mihaylovskiy-zamok/main-1.webp" type="image/webp">
+                        <img src="img/mihaylovskiy-zamok/main-1.jpg" alt="Михайловский замок - главное фото" loading="eager">
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="img/mihaylovskiy-zamok/main-2.webp" type="image/webp">
+                        <img src="img/mihaylovskiy-zamok/main-2.jpg" alt="Михайловский замок - фото сбоку" loading="eager">
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="img/index-photo/cards/mihaylovskiy-zamok.webp" type="image/webp">
+                        <img src="img/index-photo/cards/mihaylovskiy-zamok.jpg"
+                            alt="Михайловский замок - дополнительное фото" loading="lazy">
+                    </picture>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+
+        <!-- Слайдер JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+        <script src="scripts/slider.js"></script>
+
+        <!-- Основная информация -->
+        <section class="info-section">
+            <div class="decor-line" style="background-color: #D48858;"></div>
+
+            <h2 class="info-main-title">Основная информация</h2>
+
+            <div class="info-cards-container">
+
+                <!-- Карточка 1 -->
+                <div class="info-card" style="background-color:#ffccac;">
+                    <h3 class="info-card-title">Адрес</h3>
+                    <p class="info-card-text">Садовая ул. 2,<br>Санкт-Петербург</p>
+                </div>
+
+                <!-- Карточка 2 -->
+                <div class="info-card" style="background-color:#e2a37c;">
+                    <h3 class="info-card-title">Годы постройки</h3>
+                    <p class="info-card-text">1797—1801</p>
+                </div>
+
+                <!-- Карточка 3 -->
+                <div class="info-card" style="background-color:#d49066;">
+                    <h3 class="info-card-title">Стиль</h3>
+                    <p class="info-card-text">Романтический классицизм</p>
+                </div>
+            </div>
+
+            <!-- Карта -->
+            <div class="map-container">
+                <script type="text/javascript" charset="utf-8" async 
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4917ca0a8d3b8b19856a79e1659c2f83be35b7dcc10ceb8b975b9e3f411f450d&amp;width=700&amp;height=700&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+        </section>
+
+        <!-- История строительства -->
+        <section class="history-section" style="background: #ffebdf; border: 4px solid #ffb78a;">
+            <div class="history-container">
+                <div class="history-header">
+                    <h2 class="history-title" style="color: #ce7f4f;">История строительства</h2>
+                </div>
+
+                <div class="history-content">
+                    <div class="history-image-wrapper">
+                        <img src="img/mihaylovskiy-zamok/history.jpg" alt="Михайловский замок" class="history-image"
+                            loading="lazy">
+                    </div>
+
+                    <div class="history-text">
+                        <p>Михайловский замок, названный в честь находящегося внутри него храма Михаила Архангела, был
+                            возведён в 1797—1801 годах на месте деревянного Летнего дворца Елизаветы Петровны.
+                            Строительством замка сначала руководил В. И. Баженов, но после неосторожных высказываний о
+                            планировке замка его отстранили, и дальнейшим строительством стал руководить В. Бренна. Для
+                            росписи залов были приглашены известнейшие художники того времени: К. Скотти, А. Виги, Ф.
+                            Смуглевич, И. Меттенлейтер.
+                        </p>
+                        <p>12 марта 1801 года был убит Павла I, после чего замок на долгие годы пришёл в запустение. С 1823
+                        года здесь располагалось Николаевское Инженерное училище, давшее замку второе название —
+                        Инженерный. С 1960-х годов большую часть помещений отдали научно-исследовательским институтам, и
+                        территория стала закрытой для любых экскурсий. В 1994 году здание было передано Государственному
+                        Русскому музею. К 300-летнему юбилею города замок был отреставрирован и в 2003 году стал
+                        доступным для посещений.
+                    </p>
+                    </div>
+                </div>
+
+                <div class="interesting-fact-box"
+                    style="background: linear-gradient(135deg, #ffccad 0%, #ffb586 100%);">
+                    <h3 class="fact-title">Интересный факт!</h3>
+                    <p class="fact-text">Император Павел I так торопился переехать в свой замок, что отдал приказ
+                        строить его без перерывов и работы велись даже ночью, при свете факелов.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Архитектурные особенности -->
+        <section class="architecture-section">
+            <div class="architecture-container">
+                <h2 class="architecture-title">Архитектурные особенности</h2>
+
+                <div class="architecture-images">
+                    <div class="architecture-image-item">
+                        <img src="img/mihaylovskiy-zamok/architectory-1.jpg" alt="Мраморная галерея"
+                            class="architecture-photo" loading="lazy">
+                        <p class="architecture-caption">Мраморная галерея</p>
+                    </div>
+
+                    <div class="architecture-image-item">
+                        <img src="img/mihaylovskiy-zamok/architectory-2.jpg" alt="Парадная лестница"
+                            class="architecture-photo" loading="lazy">
+                        <p class="architecture-caption">Парадная лестница</p>
+                    </div>
+                </div>
+
+                <div class="architecture-text">
+                    <p>Михайловский замок представляет собой ориентированный по сторонам света квадрат со скруглёнными
+                        углами и октогональным внутренним двором.
+                        Главный фасад построен на постепенном нарастании архитектурных масс и скульптурного декора от
+                        периферии к центру. На фоне гладких стен рельефно выступает значительных размеров ризалит с
+                        мраморными колоннами, объединяющими два верхних этажа. Каждой колонне когда-то отвечала
+                        располагавшаяся над карнизом круглая скульптура, изображавшая в аллегорической форме одну из
+                        областей России. Боковые фасады — со стороны реки Фонтанки и церковный — более скромны и сходны
+                        между собой. Тот и другой в центральной части отмечены выступом, соответствующим в одном случае
+                        Овальному залу, а в другом — помещению церкви
+                    </p>
+                    <p>Центральный портик с такими же, но сдвоенными колоннами облицован разноцветным мрамором,
+                        обработанным крупным рустом, украшен двумя обелисками с военной арматурой и вензелем Павла I.
+                        Над колоннадой проходит фриз из шокшинского порфира.
+                    </p>
+                </div>
+            </div>
+        </section>
+
     </main>
+
+    <!-- Подвал -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-column">
+                    <a href="#" class="footer-link">Новости</a>
+                    <a href="#" class="footer-link">Памятка путешественника</a>
+                </div>
+                <div class="footer-column">
+                    <a href="#" class="footer-link">Тест</a>
+                    <a href="#" class="footer-link">Контакты</a>
+                </div>
+            </div>
+
+            <div class="footer-right">
+                <h3 class="footer-title">Популярные дворцы</h3>
+                <div class="footer-palaces">
+                    <a href="zimniy.html" class="footer-link">Зимний</a>
+                    <a href="petergof.html" class="footer-link">Петергоф</a>
+                    <a href="petra-2.html" class="footer-link">Петра II</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copyright">© 2026 • Selurin</p>
+        </div>
+    </footer>
 
 </body>
 

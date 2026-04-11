@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="palace.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="icon" href="img/favicon.ico">
     <title>Михайловский дворец | Царская тропа</title>
 </head>
@@ -29,10 +30,187 @@
         </div>
 
         <script src="scripts/timedate.js"></script>
+        </div>
     </nav>
 
     <main>
+        <h1 class="h-palace">Михайловский дворец</h1>
+        <!-- Слайдер -->
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="img/mihaylovskiy-dvorec/main-1.webp" type="image/webp">
+                        <img src="img/mihaylovskiy-dvorec/main-1.jpg" alt="Михайловский дворец - главное фото"
+                            loading="eager">
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="img/mihaylovskiy-dvorec/main-2.webp" type="image/webp">
+                        <img src="img/mihaylovskiy-dvorec/main-1.jpg" alt="Михайловский дворец - фото сбоку" loading="eager">
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="img/index-photo/cards/mihaylovskiy-dvorec.webp" type="image/webp">
+                        <img src="img/index-photo/cards/mihaylovskiy-dvorec.jpg"
+                            alt="Михайловский дворец - дополнительное фото" loading="lazy">
+                    </picture>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+
+        <!-- Слайдер JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+        <script src="scripts/slider.js"></script>
+
+        <!-- Основная информация -->
+        <section class="info-section">
+            <div class="decor-line" style="background-color: #f5d8a0;"></div>
+
+            <h2 class="info-main-title">Основная информация</h2>
+
+            <div class="info-cards-container">
+
+                <!-- Карточка 1 -->
+                <div class="info-card" style="background-color:#ffe7b8;">
+                    <h3 class="info-card-title">Адрес</h3>
+                    <p class="info-card-text">Инженерная ул. 2-4Д,<br>Санкт-Петербург</p>
+                </div>
+
+                <!-- Карточка 2 -->
+                <div class="info-card" style="background-color:#ffde9d;">
+                    <h3 class="info-card-title">Годы постройки</h3>
+                    <p class="info-card-text">1819–1825</p>
+                </div>
+
+                <!-- Карточка 3 -->
+                <div class="info-card" style="background-color:#f3d18c;">
+                    <h3 class="info-card-title">Стиль</h3>
+                    <p class="info-card-text">Ампир</p>
+                </div>
+            </div>
+
+            <!-- Карта -->
+            <div class="map-container">
+                <script type="text/javascript" charset="utf-8" async 
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4917ca0a8d3b8b19856a79e1659c2f83be35b7dcc10ceb8b975b9e3f411f450d&amp;width=700&amp;height=700&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+            <p class="text-palace">Михайловский дворец — выдающийся памятник архитектуры Санкт-Петербурга, построенный в
+                1819–1825 годах по проекту знаменитого архитектора Карла Росси. Дворец был возведён для великого князя
+                Михаила Павловича, младшего сына императора Павла I, и стал одним из символов русского классицизма и
+                ампира начала XIX века.
+            </p>
+        </section>
+
+        <!-- История строительства -->
+        <section class="history-section" style="background: #fff9ed; border: 4px solid #d8b266;">
+            <div class="history-container">
+                <div class="history-header">
+                    <h2 class="history-title" style="color: #be994e;">История строительства</h2>
+                </div>
+
+                <div class="history-content">
+                    <div class="history-image-wrapper">
+                        <img src="img/mihaylovskiy-dvorec/history.jpeg" alt="Михайловский дворец" class="history-image"
+                            loading="lazy">
+                    </div>
+
+                    <div class="history-text">
+                        <p>Михайловский дворец изначально задумывался как императорская резиденция и был построен в
+                            период подъёма национального самосознания после победы в Отечественной войне 1812 года. Он
+                            стал не только домом для великого князя, но и местом проведения балов, приёмов и других
+                            значимых событий.</p>
+
+                        <p> В 1895 году дворец был выкуплен в казну и передан Русскому музею императора Александра III.
+                            Внутренние помещения были перестроены под музейные нужды, и сегодня здесь располагается
+                            основная экспозиция Русского музея, включая уникальные коллекции иконописи и живописи.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="interesting-fact-box"
+                    style="background: linear-gradient(135deg, #ffe8ba 0%, #ffdb94 100%);">
+                    <h3 class="fact-title">Интересный факт!</h3>
+                    <p class="fact-text">Идея возведения дворца принадлежала императору Павлу I, который хотел, чтобы
+                        резиденция его младшего сына Михаила превзошла по роскоши и масштабам дворцы европейских
+                        монархов. На строительство с самого начала выделялись огромные средства: к 1819 году на
+                        специальном счету уже было накоплено <span class="text-marker">
+                            9 миллионов рублей — колоссальная сумма для того времени.</span>
+                        Общая стоимость работ составила почти 8 миллионов рублей, из которых около 4 миллионов ушло
+                        только на внутреннее убранство.
+
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Архитектурные особенности -->
+        <section class="architecture-section">
+            <div class="architecture-container">
+                <h2 class="architecture-title">Архитектурные особенности</h2>
+
+                <div class="architecture-images">
+                    <div class="architecture-image-item">
+                        <img src="img/mihaylovskiy-dvorec/architectory-1.jpg" alt="Главный вестибюль."
+                            class="architecture-photo" loading="lazy">
+                        <p class="architecture-caption"> Главный вестибюль</p>
+                    </div>
+
+                    <div class="architecture-image-item">
+                        <img src="img/mihaylovskiy-dvorec/architectory-2.jpg"
+                            alt="Один из залов Государственного Русского музея." class="architecture-photo"
+                            loading="lazy">
+                        <p class="architecture-caption">Один из залов Государственного Русского музея</p>
+                    </div>
+                </div>
+
+                <div class="architecture-text">
+                    <p>В облике дворца прослеживаются античные мотивы, характерные для римской архитектуры:
+                        монументальность, строгость линий, симметрия и богатое декоративное оформление. Фасады здания
+                        выполнены из финского гранита и белого мрамора, что придаёт дворцу особую изысканность.
+                        Центральная часть украшена восьмиколонным коринфским портиком, поднятым на аркаду цокольного
+                        этажа. Боковые флигели симметричны и связаны между собой изящной чугунной оградой. Внутренние
+                        интерьеры отличались роскошью: сохранились Главный вестибюль и Белый зал — шедевры России.
+                    </p>
+                </div>
+            </div>
+        </section>
+
     </main>
+
+    <!-- Подвал -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-column">
+                    <a href="#" class="footer-link">Новости</a>
+                    <a href="#" class="footer-link">Памятка путешественника</a>
+                </div>
+                <div class="footer-column">
+                    <a href="#" class="footer-link">Тест</a>
+                    <a href="#" class="footer-link">Контакты</a>
+                </div>
+            </div>
+
+            <div class="footer-right">
+                <h3 class="footer-title">Популярные дворцы</h3>
+                <div class="footer-palaces">
+                    <a href="zimniy.html" class="footer-link">Зимний</a>
+                    <a href="petergof.html" class="footer-link">Петергоф</a>
+                    <a href="petra-2.html" class="footer-link">Петра II</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copyright">© 2026 • Selurin</p>
+        </div>
+    </footer>
 
 </body>
 

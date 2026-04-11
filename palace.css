@@ -121,6 +121,16 @@
   margin-top: 80px;
 }
 
+.text-marker {
+  font-weight: bold; 
+  font-style: italic;
+}
+
+.text-bold-V {
+  font-family: 'Vollkorn';
+  font-weight: bold; 
+}
+
 /* История строительства */
 .history-section {
   padding: 60px 40px;
