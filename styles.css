@@ -47,6 +47,37 @@ body {
 .burger-btn.active span:nth-child(2) { opacity: 0; transform: scaleX(0); }
 .burger-btn.active span:nth-child(3) { transform: translateY(-9px) rotate(-45deg); }
 
+.menu-list {
+  position: fixed;
+  top: 68px;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 68px);
+  background: #b31b1b; 
+  list-style: none;
+  margin: 0;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  transform: translateX(-100%);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 15;
+}
+.menu-list.active {
+  transform: translateX(0);
+}
+
+.menu-item {
+  display: block;
+  padding: 8px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+}
+
 .top-bar {
   height: 68px;
   background-color: #4A4A4A;
