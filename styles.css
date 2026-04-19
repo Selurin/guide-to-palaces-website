@@ -51,7 +51,6 @@ body {
   top: 48px;
   right: 0;
   width: 30%;
-  height: 400px;
   background: #b31b1b; 
   list-style: none;
   margin: 0;
@@ -60,9 +59,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 16px;
-  /*transform: translateX(100%);
 
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);*/
   visibility: hidden;
   opacity: 0;
   z-index: 15;
@@ -71,8 +68,6 @@ body {
 .menu-list.active {
   visibility: visible;
   opacity: 1;
-  /*transform: translateX(0);*/
-
 }
 
 .menu-item {
@@ -1000,12 +995,12 @@ thead {
   }
 
   .nav-item {
-    padding: 12px 20px;
+    padding: 12px 12px;
     height: auto;
     font-size: 16px;
     border-right: none;
     border-bottom: 1px solid #4A4A4A;
-    width: calc(50% - 10px / 2);
+    width: calc(40% - 10px / 2);
     box-sizing: border-box;
   }
 
