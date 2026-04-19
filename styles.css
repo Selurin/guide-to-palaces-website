@@ -29,6 +29,7 @@ body {
   cursor: pointer;
   padding: 0;
   z-index: 2;
+  margin-right: 10px;
 }
 
 .burger-btn span {
@@ -943,11 +944,12 @@ thead {
 @media (max-width: 768px) {
   .burger-btn {
     display: flex;
+    margin-right: 2px;
   }
 
   .top-bar {
     height: auto;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 0 16px;
@@ -956,8 +958,7 @@ thead {
   }
 
   .nav-container {
-    /*flex-direction: row;*/
-    flex-wrap: wrap;
+    flex-direction: row;
     height: auto;
     gap: 10px;
   }
@@ -970,6 +971,10 @@ thead {
     border-bottom: 1px solid #4A4A4A;
     width: calc(50% - 10px / 2);
     box-sizing: border-box;
+  }
+
+   .nav-item.active {
+    display: none;
   }
 
   .datetime {
