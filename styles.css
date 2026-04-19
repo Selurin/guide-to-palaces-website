@@ -908,28 +908,14 @@ thead {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 650px;
     font-size: 40px;
     color: #222222;
     font-weight: normal;
     text-align: center;
-    padding: 50px;
+    padding: 0px;
 }
 
-    .contacnts-container {
-      display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-    width: 500px;
-   
-    }
-
-    .contacnts-cta {
-      display: flex;
-    justify-content: center;
-    align-items: center;
-    }
 
   
 
