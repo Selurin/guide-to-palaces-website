@@ -308,7 +308,8 @@
    
 @media (max-width: 768px) {
   .h-palace {
-    font-size: 45px;
+    font-size: 35px;
+    margin: 27px 18px ;
   }
 
   .text-palace {
