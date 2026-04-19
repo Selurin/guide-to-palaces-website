@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Закрытие при клике вне меню
   document.addEventListener('click', (e) => {
-    if (nav.classList.contains('active') && !nav.contains(e.target) && !burger.contains(e.target)) {
+    if (menu.classList.contains('active') && !menu.contains(e.target) && !burger.contains(e.target)) {
      closeMenu();
     }
   });

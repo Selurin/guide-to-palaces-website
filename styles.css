@@ -29,7 +29,6 @@ body {
   cursor: pointer;
   padding: 0;
   z-index: 2;
-  margin-right: 10px;
 }
 
 .burger-btn span {
@@ -61,12 +60,16 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 16px;
-  transform: translateX(100%);
+  transform: translateX(100%),translateY(-100%);
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 15;
+  visibility: hidden;
+  opacity: 0;
 }
 .menu-list.active {
-  transform: translateX(0);
+  transform: translateX(0),translateY(0);
+  visibility: visible;
+  opacity: 1;
 }
 
 .menu-item {
@@ -79,6 +82,7 @@ body {
 }
 
 .top-bar {
+  position: relative;
   height: 68px;
   background-color: #4A4A4A;
   display: flex;
@@ -994,7 +998,7 @@ thead {
   }
 
   .nav-item {
-    padding: 12px 14px;
+    padding: 12px 20px;
     height: auto;
     font-size: 16px;
     border-right: none;
@@ -1013,6 +1017,10 @@ thead {
     margin-top: 10px;
     text-align: center;
   }
+
+.hidden-in-mobile {
+  display: none;
+}
 }
 
 @media (min-width: 769px) {
