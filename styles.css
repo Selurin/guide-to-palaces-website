@@ -1149,6 +1149,18 @@ thead {
 }
 
 /* Карточки дворцов */
+@media (max-width: 1600px) {
+  .palaces-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1200px) {
+  .palaces-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
   .palaces-grid {
     grid-template-columns: 1fr;
@@ -1177,19 +1189,6 @@ thead {
     font-size: 20px;
   }
 }
-
-@media (max-width: 1600px) {
-  .palaces-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (max-width: 1200px) {
-  .palaces-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 
 /* Страница тестов */
 @media (max-width: 768px) {
