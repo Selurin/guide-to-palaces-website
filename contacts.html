@@ -15,39 +15,64 @@
         <div class="top-bar">
             <nav class="nav-container">
                 <a href="index.html" class="nav-item">Главная</a>
-                <a href="#palaces" class="nav-item">Дворцы</a>
+                <a href="index.html#palaces" class="nav-item">Дворцы</a>
                 <a href="memo-traveler.html" class="nav-item">Памятка</a>
                 <a href="testing.html" class="nav-item">Тест</a>
                 <a href="contacts.html" class="nav-item active hidden-in-mobile">Контакты</a>
             </nav>
-    
+
             <div class="datetime">
                 <div class="datetime-text time" id="time">11:00</div>
                 <div class="datetime-text date" id="date">25.03.2026</div>
             </div>
 
-                <button class="burger-btn" aria-label="Открыть меню">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    </button>
-                
-                <ul class="menu-list">
-                    <li><a href="index.html" class="menu-item">Главная</a></li>
-                    <li><a href="#palaces" class="menu-item">Дворцы</a></li>
-                    <li><a href="memo-traveler.html" class="menu-item">Памятка</a></li>
-                    <li><a href="testing.html" class="menu-item">Тест</a></li>
-                    <li><a href="contacts.html" class="menu-item">Контакты</a></li>
-                </ul>
+            <button class="burger-btn" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="menu-list">
+                <li><a href="index.html" class="menu-item">Главная</a></li>
+                <li><a href="index.html#palaces" class="menu-item">Дворцы</a></li>
+                <li><a href="memo-traveler.html" class="menu-item">Памятка</a></li>
+                <li><a href="testing.html" class="menu-item">Тест</a></li>
+                <li><a href="contacts.html" class="menu-item">Контакты</a></li>
+            </ul>
 
         </div>
 
-            <script src="scripts/timedate.js"></script>
-            <script src="scripts/burger-menu.js"></script>
+        <script src="scripts/timedate.js"></script>
+        <script src="scripts/burger-menu.js"></script>
 
     </nav>
+    <div class="cta-section">
+    <div class="cta-background contacnts-cta"></div>
+    <h1 class="contacts-text">Телефон +7 000 000 00 00 (звонок бесплатный) <br>Почта 000000@0000.000</h1>
+    </div>
 
+    <!-- Подвал -->
+    <footer class="site-footer">
+        <div class="footer-content">
 
+            <div class="footer-column">
+                <a href="#palaces" class="footer-link">Дворцы</a>
+                <a href="memo-traveler.html" class="footer-link">Памятка путешественника</a>
+                <a href="#" class="footer-link">Тест</a>
+            </div>
+            <p style="text-align: center; color: white;font-size: 18px;">© 2026 • Selurin</p>
+
+            <div class="footer-right">
+                <h3 class="footer-title">Популярные дворцы</h3>
+                <div class="footer-palaces">
+                    <a href="zimniy.html" class="footer-link">Зимний</a>
+                    <a href="petergof.html" class="footer-link">Петергоф</a>
+                    <a href="tavricheskiy.html" class="footer-link">Таврический</a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
 </body>
 
 </html>

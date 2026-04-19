@@ -901,6 +901,39 @@ thead {
 }
 
 /* ========================================
+   КОНТАКТЫ
+   ======================================== */
+
+  .contacts-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 40px;
+    color: #222222;
+    font-weight: normal;
+    text-align: center;
+    padding: 50px;
+}
+
+    .contacnts-container {
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 500px;
+   
+    }
+
+    .contacnts-cta {
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+  
+
+/* ========================================
    ПОДВАЛ
    ======================================== */
 
@@ -1278,6 +1311,13 @@ thead {
   .testing-card-button {
     padding: 12px;
     font-size: 16px;
+  }
+}
+
+/*Страница контактов*/
+@media (max-width: 768px) {
+  .contacts-text {
+    font-size: 30px;
   }
 }
 
