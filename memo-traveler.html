@@ -14,19 +14,34 @@
     <nav>
         <div class="top-bar">
             <nav class="nav-container">
-                    <a href="index.html" class="nav-item">Главная</a>
-                    <a href="index.html#palaces" class="nav-item">Дворцы</a>
-                    <a href="memo-traveler.html" class="nav-item active">Памятка путешественнику</a>
-                    <a href="testing.html" class="nav-item">Тест</a>
-                </nav>
-
-                <div class="datetime">
-                    <div class="datetime-text time" id="time">11:00</div>
-                    <div class="datetime-text date" id="date">25.03.2026</div>
-                </div>
+                <a href="index.html" class="nav-item">Главная</a>
+                <a href="index.html#palaces" class="nav-item">Дворцы</a>
+                <a href="memo-traveler.html" class="nav-item active">Памятка</a>
+                <a href="testing.html" class="nav-item">Тест</a>
+                <a href="contacts.html" class="nav-item hidden-in-mobile">Контакты</a>
+            </nav>
+    
+            <div class="datetime">
+                <div class="datetime-text time" id="time">11:00</div>
+                <div class="datetime-text date" id="date">25.03.2026</div>
             </div>
-
-            <script src="scripts/timedate.js"></script>
+            <button class="burger-btn" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+    
+            <ul class="menu-list">
+                <li><a href="index.html" class="menu-item">Главная</a></li>
+                <li><a href="#palaces" class="menu-item">Дворцы</a></li>
+                <li><a href="memo-traveler.html" class="menu-item">Памятка</a></li>
+                <li><a href="testing.html" class="menu-item">Тест</a></li>
+                <li><a href="contacts.html" class="menu-item">Контакты</a></li>
+            </ul>
+        </div>
+    
+        <script src="scripts/timedate.js"></script>
+        <script src="scripts/burger-menu.js"></script>
         </div>
     </nav>
 
