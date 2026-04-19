@@ -847,6 +847,8 @@ body {
   width: 100%;
   /* Схлопывание границ в одну */
   border-collapse: collapse; 
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 table, th, td {
