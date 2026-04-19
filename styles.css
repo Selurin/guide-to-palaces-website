@@ -18,6 +18,33 @@ body {
 /* ========================================
    НАВИГАЦИЯ
    ======================================== */
+.burger-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 2;
+}
+
+.burger-btn span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: center;
+}
+
+/* Анимация: бургер ->  крестик */
+.burger-btn.active span:nth-child(1) { transform: translateY(9px) rotate(45deg); }
+.burger-btn.active span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.burger-btn.active span:nth-child(3) { transform: translateY(-9px) rotate(-45deg); }
 
 .top-bar {
   height: 68px;
@@ -28,6 +55,7 @@ body {
   padding: 0;
   width: 100%;
 }
+
 
 .nav-container {
   display: flex;
@@ -913,14 +941,22 @@ thead {
 }
 
 @media (max-width: 768px) {
+  .burger-btn {
+    display: flex;
+  }
+
   .top-bar {
     height: auto;
-    flex-direction: column;
-    padding: 10px 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    position: relative;
+    z-index: 3;
   }
 
   .nav-container {
-    flex-direction: column;
+    flex-direction: row;
     height: auto;
     gap: 10px;
   }
@@ -934,6 +970,7 @@ thead {
   }
 
   .datetime {
+    display: none;
     margin-left: 0;
     margin-top: 10px;
     text-align: center;
