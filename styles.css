@@ -1345,6 +1345,9 @@ thead {
     margin: 30px 0 15px;
     padding: 0 20px;
   }
+  .h1-memo {
+  font-size: 30px;
+  }
 
   main > p {
     font-size: 18px;
