@@ -843,12 +843,16 @@ body {
 /* ========================================
    ПАМЯТКА ПУТЕШЕСТВЕННИКУ
    ======================================== */
-   table {
+   .table-wrapper {
+  overflow-x: auto;           /* горизонтальный скролл */
+  -webkit-overflow-scrolling: touch; /* плавный скролл на iOS */
+  width: 100%;                /* на всю ширину экрана */
+}
+
+table {
+  min-width: 600px;           /* минимальная ширина таблицы */
   width: 100%;
-  /* Схлопывание границ в одну */
-  border-collapse: collapse; 
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
+  border-collapse: collapse;
 }
 
 table, th, td {
